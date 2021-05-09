@@ -9,5 +9,5 @@ Get to know me :dancer:
 ## How To
 
 ```sh
-sudo tlmgr install moderncv academicons fontawesome5 multirow arydshln
+sudo tlmgr install moderncv academicons fontawesome5 multirow arydshln roboto
 ```
