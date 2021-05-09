@@ -1,55 +1,14 @@
-%-------------------------------------------------------------------------------
-%	SECTION TITLE
-%-------------------------------------------------------------------------------
-\cvsection{Work Experience}
+\section{Work Experience}
 
-
-%-------------------------------------------------------------------------------
-%	CONTENT
-%-------------------------------------------------------------------------------
-\begin{cventries}
-
-%---------------------------------------------------------
-  \cventry
-    {Trainee} % Job title
-    {Iranian Telecommunication Reseach Center (ITRC)} % Organization
-    {Tehran, Iran} % Location
-    {Summer 2016} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Designed and implemented the home automation solutions using the Raspberry Pi}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-
-%---------------------------------------------------------
-  \cventry
-    {System Architect \& Software Engineer} % Job title
-    {IoT Working Group of Amirkabir University of Technology} % Organization
-    {Tehran, Iran} % Location
-    {Jul. 2017 - Jun. 2019} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Designed the scalable IoT Platform that can handle 1K rps with Golang}
-        \item {Run services with Docker on bare-metals and monitored them using Prometheus}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-
-%---------------------------------------------------------
-  \cventry
-    {Backend Engineer} % Job title
-    {Snapp!} % Organization
-    {Tehran, Iran} % Location
-    {Feb. 2019 - Present} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Developed location based system that handles high load}
-        \item {Designed and Developed surge pricing system that consumes 6K messages per second with Golang}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-\end{cventries}
+\cventry{2016}{Trainee}{Iranian Telecommunication Reseach Center}{Tehran, Iran}{}{%
+  Designed and implemented the home automation solutions using the Raspberry Pi.
+}
+\cventry{2017--2019}{System Architect}{IoT Working Group of Amirkabir University of Technology}{Tehran, Iran}{}{%
+  Designed the scalable IoT Platform that can handle 1K rps with Golang, and also
+  deployed its services with Docker on bare-metals and monitor them using Prometheus.
+}
+\cventry{2019--current}{Backend Engineer}{Snapp!}{Tehran, Iran}{}{%
+  Developed location based system that handles high load as a Charlie team member.
+  Designed and developed surge pricing system that consumes more than 6K messages per second with Golang as a Shared Service team member.
+  Designed and developed event dispatching services based on polling and mqtt as a Dispatching team member.
+}
