@@ -1,6 +1,7 @@
 # 1995parham.pdf
 
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/1995parham/1995parham.pdf/latex?label=latex&logo=github&style=flat-square)
+![me](https://img.shields.io/badge/me-parham-orange.svg?style=flat-square)
 
 ## Introduction
 
@@ -31,3 +32,7 @@ sudo tlmgr install moderncv academicons fontawesome5 multirow arydshln roboto
 ```sh
 latexmk main.tex
 ```
+
+## How to write a resume
+
+- [The punctuation Guide](http://www.thepunctuationguide.com/index.html)
