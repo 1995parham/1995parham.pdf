@@ -19,10 +19,16 @@
 \firstname{Parham}
 \lastname{Alvani}
 \title{PhD Student, Backend Engineer}
-\mobile{+98 939 09 09 540}
+\phone[mobile]{+98 939 09 09 540}
 \email{parham.alvani@gmail.com}
+\homepage{https://1995parham.me}
 \photo[96pt]{profile}
+% not supported yet at moderncv 2.1.0
+% \born{20 February 1995}
 \quote{I Have a Dream}
+
+\social[skype]{parham.alvani}
+\social[github]{1995parham}
 
 \begin{document}
 \maketitle
@@ -32,21 +38,54 @@
 \input{resume/experience.tex}
 
 \section{Languages}
-\cvlanguage{English}{Proficient}{}
-\cvlanguage{Persian}{Native}{}
+\cvitemwithcomment{English}{Proficient}{}
+\cvitemwithcomment{Persian}{Native}{}
 
-\section{Programming Languages \& Frameworks}
-\cvcomputer{Expert}{C, Golang}{Expert}{amd64 Assembly}
-\cvcomputer{Specialist}{Nodejs, Python}{Skilled}{Laravel}
-\cvcomputer{Specialist}{Angular}{Beginner}{Rust}
+\section{Skills}
 
-\section{Operating Systems \& etc.}
-\cvcomputer{OSs}{Ubuntu, Arch}{Containers}{Docker, Kubernetes}
-\cvcomputer{Protocols}{OpenFlow1.3, OpenFlow1.5}{SDN Controllers}{ONOS Platform, FloodLight, Ryu}
-\cvcomputer{Network Simulators}{Mininet}{}{}
+%% \cvskillentry[*][<post_padding>]{<skill_cathegory>}{<0-5>}{<skill_name>}{<years_of_experience>}{<comment>}%
+\cvskillentry*{Language:}{5}{C}{}{}
+\cvskillentry{}{5}{Golang}{}{}
+\cvskillentry{}{5}{amd64 Assembly}{}{}
+\cvskillentry{}{4}{Python3}{}{}
+\cvskillentry{}{3}{Javascript}{}{}
+\cvskillentry{}{3}{\LaTeX}{}{}
+\cvskillentry{}{2}{Rust}{}{}
+\cvskillentry*{OS:}{4}{Arch}{}{}
+\cvskillentry{}{4}{Ubuntu}{}{}
+\cvskillentry*{Containers:}{4}{Docker}{}{}
+\cvskillentry{}{4}{Kubernetes}{}{}
+\cvskillentry*{Frameworks:}{3}{React}{}{}
+\cvskillentry{}{3}{Angular}{}{}
+\cvskillentry*{Network Simulators:}{4}{Mininet}{}{}
+\cvskillentry{}{3}{Boson}{}{}
+\cvskillentry*{SDN Controllers:}{5}{Ryu}{}{}
+\cvskillentry{}{4}{ONOS Platform}{}{}
+\cvskillentry{}{3}{Floodlight}{}{}
 
 \input{resume/education.tex}
 
+\input{resume/research.tex}
+
+\input{resume/honors.tex}
+
+\input{resume/certificate.tex}
+
 \input{resume/teaching.tex}
+
+\input{resume/extracurricular.tex}
+
+
+\section{References}
+\begin{cvcolumns}
+  \cvcolumn{Academic}{\begin{itemize}\item Prof.\ Bahador Bakhshi\item Prof.\ Masoud Sabaei\item Prof. Mehdi Rasti\end{itemize}}
+  \cvcolumn{Snapp!}{\begin{itemize}\item Reza Safdari \item Sina Saeidi\end{itemize} (more upon request)}
+\end{cvcolumns}
+
+\emptysection{}\closesection{}
+\vfill
+\textit{I hereby declare that the details and information given above are complete and true to the best of my knowledge}
+\linebreak
+\textbf{Parham Alvani}\hfil\today
 
 \end{document}
