@@ -24,6 +24,8 @@ Each release has build date as its name.
 2. Install requirements
 
 ```sh
+sudo pacman -Syu otf-latinmodern-math
+sudo pacman -Syu otf-latin-modern
 sudo tlmgr install moderncv academicons fontawesome5 multirow arydshln roboto
 ```
 
