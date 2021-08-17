@@ -14,7 +14,6 @@ jobs:
       - name: compile resume in latex
         uses: xu-cheng/latex-action@v2
         with:
-          latexmk_use_xelatex: true
           root_file: main.tex
       - name: release
         uses: softprops/action-gh-release@v1
