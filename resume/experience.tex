@@ -1,19 +1,27 @@
 \section{Work Experience}
 
-\cventry{2016}{Trainee}{Iranian Telecommunication Reseach Center}{Tehran, Iran}{}{%
-  Designed and implemented the home automation solutions using the Raspberry Pi.
+\cventry{2016}{Intern}{Iranian Telecommunication Reseach Center}{Tehran, Iran}{}{%
+  I worked with three of my colleagues, and we designed and implemented the home automation solutions using the Raspberry Pi and \httpslink[ThingSpeak]{github.com/iobridge/thingspeak}.
+  ThinkSpeak is written in Ruby, so we need to use Ruby to maintain it and use it as our IoT Platform.
 }
 
 \cventry{2017--2019}{System Architect}{IoT Working Group of Amirkabir University of Technology}{Tehran, Iran}{}{%
-  Designed the scalable IoT Platform that can handle 1K rps with Golang, and also
-  deployed its services with Docker on bare-metals and monitor them using Prometheus.
+  We designed the scalable IoT Platform that can handle 1K rps with Golang, and also
+  deployed its microservices with Docker on bare-metals and monitor them using Prometheus.
+  We need to somehow orchestrate these services, and for that we used \httpslink[Portainer]{github.com/portainer}.
+  Our team consisted of frontend, backend and platform. I worked at the platform side with two, three persons during
+  those years. We provided APIs for backend team (which was written in PHP) to query sensors data and control the
+  actuators.
 }
 
 \cventry{2019--current}{Engineering Manager}{Snapp!}{Tehran, Iran}{}{%
   \begin{itemize}
-    \item Developed location based systems that handle heavy load as a Charlie team member.
+    \item Developed location based systems using Golang that handle heavy load as a Charlie team member.
+      We read location data which was almost 10,11K at that time and process them using Golang and stored results into
+      location-based cache named \httpslink[tile38](https://github.com/tile38).
     \item Designed and developed surge pricing system that consumes more than 6K messages per second with Golang as a Shared Service team member.
     \item Designed and developed event dispatching services based on polling and MQTT as a Dispatching team member.
     \item Deploy and maitain heavy load services on kubernetes.
+    \item Team lead of a cross-functional team which has 9-12 members.
   \end{itemize}
 }
