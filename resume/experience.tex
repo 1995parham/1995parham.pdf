@@ -9,16 +9,34 @@
 }
 
 \cventry{2017--2019}{System Architect}{IoT Working Group of Amirkabir University of Technology}{Tehran, Iran}{}{%
+  As a member of a cross-functional team, I contributed to the design and implementation of a high-performance IoT platform using Golang.
+  My responsibilities included deploying microservices on bare-metal servers using Docker and monitoring them with Prometheus.
+  To orchestrate these services, we utilized Portainer. Working alongside two to three other platform engineers,
+  I provided essential API endpoints to the backend team (who utilized PHP) to query sensor data and control actuators.
+  As a result, we were able to achieve a scalable platform capable of handling 1K requests per second.
 }
 
-\cventry{2019--current}{Engineering Manager}{Snapp!}{Tehran, Iran}{}{%
+\cventry{2019--2020}{Software Engineer}{Snapp!}{Tehran, Iran}{}{%
   \begin{itemize}
     \item Developed location based systems using Golang that handle heavy load as a Charlie team member.
       We read location data which was almost 10,11K at that time and process them using Golang and stored results into
-      location-based cache named \httpslink[tile38](https://github.com/tile38).
+      location-based cache named \httpslink[tile38]{github.com/tile38}.
     \item Designed and developed surge pricing system that consumes more than 6K messages per second with Golang as a Shared Service team member.
-    \item Designed and developed event dispatching services based on polling and MQTT as a Dispatching team member.
-    \item Deploy and maitain heavy load services on kubernetes.
+  \end{itemize}
+}
+
+\cventry{2020--2022}{Senior Software Engineer}{Snapp!}{Tehran, Iran}{}{%
+  \begin{itemize}
+    \item Designed and developed event dispatching services based on polling and MQTT as a Dispatching team lead.
+    \item Deploy \httpslink[EMQ]{www.emqx.io} on Kubernetes to handle 500K concurrent connections
     \item Team lead of a cross-functional team which has 9-12 members.
+  \end{itemize}
+}
+
+\cventry{2022--current}{Engineering Manager}{Snapp!}{Tehran, Iran}{}{%
+  \begin{itemize}
+    \item Deploy \httpslink[NATS]{nats.io} (Jetstream and Core) as Snapp! CMQ for more that 20 teams to use
+    \item Coordinates CMQ users and distribute they load over multiple clusters
+    \item Maintain CMQ for more that 300k messages per seconds
   \end{itemize}
 }
