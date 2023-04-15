@@ -2,7 +2,8 @@
 % https://www.ctan.org/pkg/moderncv
 \documentclass[11pt, a4paper, color, final]{moderncv}
 
-\moderncvtheme[orange]{classic}
+\moderncvstyle{banking}
+\moderncvcolor{orange}
 
 % adjust the page geometry
 \usepackage[scale=0.85]{geometry}
@@ -11,7 +12,7 @@
 % personal data
 \firstname{Parham}
 \lastname{Alvani}
-\title{Senior Software Engineer}
+%\title{Sr. Software Eng.}
 \phone[mobile]{+98 939 09 09 540}
 \email{parham.alvani@gmail.com}
 \homepage{1995parham.me}
@@ -65,9 +66,11 @@
 \input{resume/teaching.tex}
 
 \emptysection{}\closesection{}
+\iffalse
 \vfill
 \textit{I hereby declare that the details and information given above are complete and true to the best of my knowledge}
 \linebreak
 \textbf{Parham Alvani}\hfil\today
+\fi
 
 \end{document}
