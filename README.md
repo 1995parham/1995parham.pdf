@@ -23,7 +23,7 @@ Each release has build date as its name.
 ./start.sh texlive
 ```
 
-2. Make the resume!
+2. Make the resume using [Tectonic](https://tectonic-typesetting.github.io/book/latest/index.html)!
 
 ```sh
 tectonic -X build
