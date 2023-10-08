@@ -17,22 +17,16 @@ Each release has build date as its name.
 ## Build Yourself
 
 1. [Texlive](https://tug.org/texlive/) or any other TeX distributions.
-   Also you can use [my dotfiles](https://github.com/1995parham/dotfiles) to install TeXlive.
+   Also, you can use [my dotfiles](https://github.com/1995parham/dotfiles) to install TeXlive.
 
 ```sh
 ./start.sh texlive
 ```
 
-2. Install requirements
+2. Make the resume!
 
 ```sh
-sudo tlmgr install moderncv academicons fontawesome5 multirow arydshln
-```
-
-3. Make the resume!
-
-```sh
-latexmk main.tex
+tectonic -X build
 ```
 
 ## How to write a resume
