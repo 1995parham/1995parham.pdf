@@ -16,14 +16,7 @@ Each release has build date as its name.
 
 ## Build Yourself
 
-1. [Texlive](https://tug.org/texlive/) or any other TeX distributions.
-   Also, you can use [my dotfiles](https://github.com/1995parham/dotfiles) to install TeXlive.
-
-```sh
-./start.sh texlive
-```
-
-2. Make the resume using [Tectonic](https://tectonic-typesetting.github.io/book/latest/index.html)!
+Make the resume using [Tectonic](https://tectonic-typesetting.github.io/book/latest/index.html)!
 
 ```sh
 tectonic -X build
