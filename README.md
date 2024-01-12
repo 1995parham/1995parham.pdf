@@ -9,6 +9,24 @@
 
 Get to know me :dancer:
 
+## Good to know
+
+<ul>
+<li>
+  <a href="https://thetechresume.com/samples/ats-myths-busted">Application Tracking Systems and ATS Myths Busted</a>
+</li>
+<li><a href="https://www.reddit.com/r/EngineeringResumes/comments/18v23ng/the_most_common_complaint_from_hiring_managers/">The Most Common Complaint From Hiring Managers! (yes, it's keywords)</a></li>
+<li><a href="https://www.reddit.com/r/EngineeringResumes/comments/16f36kl/software_why_does_nobody_comment_on_my_resume/">Why does nobody comment on my resume?</a></li>
+<li><a href="https://huyenchip.com/2023/01/24/what-we-look-for-in-a-candidate.html">What we look for in a resume</a></li>
+<li><a href="https://www.ycombinator.com/library/FB-writing-a-great-resume">HackerNews – Writing a Great Resume</a></li>
+<li><a href="https://archive.ph/Xmdqt">The Ultimate Guide to Writing Your Resume for Software Engineer Roles</a></li>
+<li><a href="https://debarghyadas.com/writes/kpcb/">Common Mistakes From Reviewing 1000+ Tech Resumes: Kleiner Perkins Fellows 2022</a></li>
+<li><a href="https://stackoverflow.blog/2020/11/25/how-to-write-an-effective-developer-resume-advice-from-a-hiring-manager/">How to Write an Effective Developer Resume: Advice From a Hiring Manager</a></li>
+<li><a href="https://www.nicksingh.com/posts/36-resume-rules-for-software-engineers">36 Resume Rules for Software Engineers</a></li>
+<li><a href="https://evykassirer.github.io/playing-the-internship-game/1-Applying/resume_information_density/">Information density in resumes</a></li>
+<li><a href="https://www.reddit.com/r/ITCareerQuestions/comments/1346wln/">Unsolicited Perspective From a SRE Interviewer</a></li>
+</ul>
+
 ## Pre-Build Version
 
 Pre-build versions are available as GitHub Releases in PDF.
