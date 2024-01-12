@@ -9,6 +9,11 @@
 
 Get to know me :dancer:
 
+## Templates
+
+- [Google Docs](https://www.reddit.com/r/EngineeringResumes/wiki/resumetemplates#wiki_google_docs)    
+- [LaTeX](https://www.reddit.com/r/EngineeringResumes/wiki/resumetemplates#wiki_latex)
+
 ## Good to know
 
 - [Application Tracking Systems and ATS Myths Busted](https://thetechresume.com/samples/ats-myths-busted)
