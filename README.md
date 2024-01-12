@@ -16,8 +16,7 @@ Get to know me :dancer:
 
 ## Good to know
 
--  [The r/EngineeringResumes wiki](https://www.reddit.com/r/EngineeringResumes/wiki/)
-
+- [The r/EngineeringResumes wiki](https://www.reddit.com/r/EngineeringResumes/wiki/)
 - [Application Tracking Systems and ATS Myths Busted](https://thetechresume.com/samples/ats-myths-busted)
 - [The Most Common Complaint From Hiring Managers! (yes, it's keywords)](https://www.reddit.com/r/EngineeringResumes/comments/18v23ng/the_most_common_complaint_from_hiring_managers/)
 - [Why does nobody comment on my resume?](https://www.reddit.com/r/EngineeringResumes/comments/16f36kl/software_why_does_nobody_comment_on_my_resume/)
