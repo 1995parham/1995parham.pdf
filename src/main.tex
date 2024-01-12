@@ -22,14 +22,13 @@
 
 \social[skype]{parham.alvani}
 \social[github]{1995parham}
+\social[reddit]{1995parham}
 
 \let\oldtextbf\textbf
 \renewcommand{\textbf}[1]{\textcolor{orange}{\oldtextbf{#1}}}
 
 \begin{document}
 \maketitle
-
-\input{resume/summary.tex}
 
 \input{resume/experience.tex}
 
@@ -40,17 +39,25 @@
 
 \section{Skills}
 
-\cvdoubleitem{\color{orange} Programming Languages}{C, Go, Python3, Rust, Scala, Java, Erlang, Javascript, PHP}{\color{orange} Distributions}{Archlinux, Ubuntu}
-\cvdoubleitem{\color{orange} Containers}{Docker, Podman, Kubernetes}{\color{orange} Frameworks \& Libraries}{%
+\cvline{\color{orange} Programming Languages}{C, Go, Python3, Rust, Scala, Java, Erlang, Javascript, PHP}
+\cvline{\color{orange} Operating Systems}{macOS, Linux}
+\cvline{\color{orange} Tools}{
+  \httpslink{Docker}{www.docker.com},
+  \httpslink{Podman}{podman.io},
+  \httpslink{Kubernetes}{kubernetes.io},
+  \httpslink{ArgoCD}{argo-cd.readthedocs.io},
+  \httpslink{Helm}{helm.sh},
+  \httpslink[Airflow]{airflow.apache.org}
+  \httpslink[Temporal.io]{temporal.io},
+}
+\cvline{\color{orange} Frameworks \& Libraries}{%
   \httpslink[gofiber]{github.com/gofiber},
   \httpslink[echo]{github.com/labstack/echo},
   \httpslink[gorm]{github.com/go-gorm/gorm},
-  \httpslink[temporal.io]{temporal.io},
   \httpslink[viper]{github.com/spf13/viper/},
   \httpslink[django]{github.com/django},
-  React, Angular, NumPy, Scikit, Panads, \httpslink[Airflow]{airflow.apache.org}, \httpslink[glib]{docs.gtk.org/glib/}
 }
-\cvdoubleitem{\color{orange} SDN Controllers}{Ryu, ONOS, OpenDaylight}{\color{orange} Databases \& Analytics Engines}{Postgres, MongoDB, Cassandra, Spark}
+\cvline{\color{orange} Databases}{Postgres, MongoDB, Cassandra, Spark}
 
 \section{Open-Source Projects}
 
@@ -60,8 +67,6 @@
 \cvitemwithcomment{Soteria}{A solution for authentication and authorization for EMQ}{\httpslink[\githubsocialsymbol]{github.com/snapp-incubator/soteria}}
 
 \input{resume/education.tex}
-
-\input{resume/research.tex}
 
 \input{resume/honors.tex}
 
