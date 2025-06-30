@@ -1,6 +1,6 @@
 \section{Employment}
 
-\cventry{Feb 2022--Current}{Distinguished Engineer (Cloud Platform Team)}{Snapp!}{Tehran, Iran}{}{
+\cventry{Feb 2022--Current}{Distinguished Engineer (Dispatching Team)}{Snapp!}{Tehran, Iran}{}{
 	\begin{itemize}
 		\item Provide CRDs and tailor-made operator to maintain authentication and authorization over ArgoCD
 		\item Provide in-house ChatBot using Ollama, LiteLLM and OpenWebUI.
@@ -9,12 +9,15 @@
 		      more that 300k messages per second over different quality of services.
 		\item Setup \textbf{Machine learning pipelines} using classical and neural network algorithms on \textbf{Kubernetes}
           based on \textbf{KServe} and \textbf{KNative} to reduce resource usage and increase the data gathering by 10\%.
-		\item Lunch Kubernetes pods periodically using \httpslink[\textbf{Airflow}]{airflow.apache.org} for data processing.
+		\item Lunch Kubernetes pods periodically using \httpslink[\textbf{Airflow}]{airflow.apache.org} for data processing to replace old cron job.
+          Airflow provides monitoring, re-run and other features which improved the platform reliability.
 		\item Setup \httpslink[\textbf{Seldon}]{www.seldon.io} for Data science team so they can serve their models
 		      easily and without getting help from Dev team.
-		\item Write data ingestion pipelines using \textbf{Apache Spark} and \textbf{Apache Beam} in Java.
+		\item Write data ingestion pipelines using \textbf{Apache Spark} and \textbf{Apache Beam} in Java which improved
+          pipeline efficiency and reduced resource usage.
 		\item Deploy Kafka on Kubernetes using \httpslink[\textbf{Strimzi}]{https://strimzi.io/}.
-		\item Mentoring teams for effective use of NATS and other messaging systems.
+		\item Mentoring teams for effective use of NATS and other messaging systems by holding sessions and reviewing their code.
+    \item 5\% improve in Central Messaging Queue uptime by creating a unified SDK for teams to use it.
 	\end{itemize}
 }
 
@@ -29,10 +32,14 @@
 		\item Designed and optimized databases using \textbf{PostgreSQL} and \textbf{MongoDB},
 		      and implemented monitoring and alerting systems for real-time application observability using \textbf{OpenTelemetry}.
 		\item To improve the response time of chat messages stored in \textbf{MongoDB}, shard the database to achieve a 50\% reduction in response time.
-		\item \textbf{Mentored} and coached junior engineers on best practices for backend development
+    \item Implement polling solution which handles 300k http calls per second which worked as a backup solution
+          to keep drivers avaiable in case of message-passing solution failed.
+		\item \textbf{Mentored} and coached junior engineers on best practices for backend development.
 		\item Demonstrated a passion for technology and a positive approach to work,
 		      while maintaining strong communication and collaboration skills with engineering
 		      and non-engineering stakeholders alike.
+    \item Implement in-application call between driver and passenger based on \httpslink[\textbf{Pion}]{github.com/pion}
+          which replaced number masking solution and reduced the company costs about 50\%.
 	\end{itemize}
 }
 
