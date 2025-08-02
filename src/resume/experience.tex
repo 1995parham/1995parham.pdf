@@ -1,53 +1,23 @@
 \section{Employment}
 
-\cventry{Feb 2022--Current}{Distinguished Engineer (Cloud Platform)}{Snapp!}{Tehran, Iran}{}{
+\cventry{Oct 2020--Current}{Distinguished Engineer (Cloud Platform)}{Snapp!}{Tehran, Iran}{}{
 	\begin{itemize}
-		\item Provide CRDs and tailor-made operator to maintain authentication and authorization over ArgoCD
-		\item Provide in-house ChatBot using Ollama, LiteLLM and OpenWebUI.
-		\item Led the design and implementation of a scalable, microservice-based architecture for a delivery industry application,
-		      using \httpslink[\textbf{NATS}]{nats.io} as the primary message-passing system for more than 125 clients and delivering
-		      more that 300k messages per second over different quality of services.
-		\item Setup \textbf{Machine learning pipelines} using classical and neural network algorithms on \textbf{Kubernetes}
-          based on \textbf{KServe} and \textbf{KNative} to reduce resource usage and increase the data gathering by 10\%.
-		\item Lunch Kubernetes pods periodically using \httpslink[\textbf{Airflow}]{airflow.apache.org} for data processing to replace old cron job.
-          Airflow provides monitoring, re-run and other features which improved the platform reliability.
-		\item Setup \httpslink[\textbf{Seldon}]{www.seldon.io} for Data science team so they can serve their models
-		      easily and without getting help from Dev team.
-		\item Write data ingestion pipelines using \textbf{Apache Spark} and \textbf{Apache Beam} in Java which improved
-          pipeline efficiency and reduced resource usage.
-		\item Deploy Kafka on Kubernetes using \httpslink[\textbf{Strimzi}]{https://strimzi.io/}.
-		\item Mentoring teams for effective use of NATS and other messaging systems by holding sessions and reviewing their code.
-    \item 5\% improve in Central Messaging Queue uptime by creating a unified SDK for teams to use it.
+		\item Promoted from Senior Software Engineer to Distinguished Engineer, leading the design and implementation of a company-wide cloud platform.
+		\item Engineered Kubernetes operators (CRDs) to automate ArgoCD authentication and authorization.
+		\item Led the design of a scalable microservice architecture for a high-volume delivery application, leveraging \textbf{NATS} to handle over 300k messages/sec.
+		\item Implemented \textbf{KServe} and \textbf{Knative} on \textbf{Kubernetes} to build ML pipelines, reducing resource consumption and boosting data gathering by 10\%.
+		\item Replaced legacy cron jobs with \textbf{Airflow} for periodic data processing, enhancing platform reliability with improved monitoring and re-run capabilities.
+		\item Deployed and managed Kafka on Kubernetes using the \textbf{Strimzi} operator.
+		\item Mentored engineering teams on best practices for messaging systems, including NATS.
+        \item Improved Central Messaging Queue uptime by 5\% by creating a unified client SDK.
 	\end{itemize}
 }
 
-\cventry{Feb 2022--Current}{Senior Infrastructure Engineer}{Nobitex}{Tehran, Iran}{}{
+\cventry{Jan 2025--Current}{Senior Infrastructure Engineer}{Nobitex}{Tehran, Iran}{}{
 	\begin{itemize}
     \item Contributed to the successful migration of Nobitex's infrastructure from a legacy VM-based system to a modern, \textbf{cloud-based Kubernetes architecture}.
     \item Spearheaded the deployment and ongoing maintenance of core infrastructure components like \textbf{Keycloak} and \textbf{ArgoCD}.
     \item Designed and implemented Helm charts to containerize and deploy internal services, successfully migrating a complex \textbf{Centrifuge-based WebSocket service} to Kubernetes.
-	\end{itemize}
-}
-
-\cventry{Oct 2020--Feb 2022}{Senior Software Engineer / Team Lead (Dispatching Team)}{Snapp!}{Tehran, Iran}{}{
-	\begin{itemize}
-		\item Built and maintained automated testing frameworks to ensure code quality and reliability,
-		      and implemented CI/CD pipelines to streamline deployment and delivery processes.
-		\item Devised an in-house \textbf{MQTT} load testing tool to support cluster capacity planning and stress testing.
-		\item Offer an authentication and authorization solution for \textbf{EMQ} that is both highly customizable and performant.
-		\item Deploy RabbitMQ, Redis on Kubernetes using their \textbf{CRD} and \textbf{operators}.
-		\item Use GitOps based on \httpslink[\textbf{ArgoCD}]{argo-cd.readthedocs.io/en/stable}, so we can keep tracking the helm charts' values files.
-		\item Designed and optimized databases using \textbf{PostgreSQL} and \textbf{MongoDB},
-		      and implemented monitoring and alerting systems for real-time application observability using \textbf{OpenTelemetry}.
-		\item To improve the response time of chat messages stored in \textbf{MongoDB}, shard the database to achieve a 50\% reduction in response time.
-    \item Implement polling solution which handles 300k http calls per second which worked as a backup solution
-          to keep drivers avaiable in case of message-passing solution failed.
-		\item \textbf{Mentored} and coached junior engineers on best practices for backend development.
-		\item Demonstrated a passion for technology and a positive approach to work,
-		      while maintaining strong communication and collaboration skills with engineering
-		      and non-engineering stakeholders alike.
-    \item Implement in-application call between driver and passenger based on \httpslink[\textbf{Pion}]{github.com/pion}
-          which replaced number masking solution and reduced the company costs about 50\%.
 	\end{itemize}
 }
 
@@ -58,9 +28,7 @@
 		\item Developed a \textbf{real-time stream processing} service to dynamically adjust pricing and balance demand and supply,
 		      resulting in a 5\% increase in the number of accepted rides.
 		\item Developed and maintained backend services in \textbf{Golang} to ensure
-		      high \textbf{performance} and \textbf{reliability} for real-time order processing and \textbf{delivery tracking},
-		      and engineered a suite of \textbf{microservices} to enable real-time \textbf{geofencing} and in-memory geospatial
-		      indexing using \httpslink[\textbf{Tile38}]{tile38.com} with \textbf{sub-millisecond} response times.
+		      high \textbf{performance} and \textbf{reliability} for real-time order processing and \textbf{delivery tracking}.
 	\end{itemize}
 }
 
@@ -68,29 +36,11 @@
 	\begin{itemize}
 		\item Introduced and extends the open-source \textbf{IoT platform Mainflux} to build a scalable and secure backend
 		      infrastructure for a high-quality, end-to-end environmental monitoring product.
-		\item Write the open-source \httpslink[\textbf{IoT platform I1820}]{github.com/I1820/} to use in the resource constrained environments.
-		\item Worked with the backend team to design and develop a comprehensive IoT platform that manages things with multiple network protocols,
-		      including wireless protocols such as \textbf{nRF}, \textbf{Zigbee}, and \textbf{LoRaWAN}.
+		\item Worked with the backend team to design and develop a comprehensive IoT platform that manages things with multiple network protocols.
 		\item Designing a \textbf{reliable transport layer} over \textbf{NRF} to create cheap home automation systems.
-		\item Developed applications for Arduino boards using \textbf{C++}.
 		\item Developed \textbf{microservices} in \textbf{Python} and \textbf{Golang} to integrate sensors, actuators and gateways with the IoT platforms.
-		\item Collaborated closely with hardware engineers to ensure seamless communication between the IoT
-		      platform and the sensors and actuators.
-		\item Designed and implemented \textbf{RESTful} APIs and \textbf{messaging protocols} to
-		      enable communication between microservices.
-		\item \textbf{Communicated} effectively with stakeholders, including project managers, product owners, and clients,
-		      to ensure alignment and transparency of project goals, progress, and outcomes.
 		\item Designed and implemented an \textbf{Angular}-based admin panel for an IoT client,
 		      integrating \httpslink[\textbf{leaflet}]{leafletjs.com} to display sensor locations and data.
-		      Utilized best practices in frontend development, including responsive design and cross-browser compatibility, to deliver a high-quality and user-friendly experience.
-		\item Developed time series plots and diagrams using \textbf{charts.js} to visualize data for another IoT client,
-		      delivering a comprehensive and insightful dashboard for data analysis and decision-making.
-		\item Maintained up-to-date knowledge of the latest technologies and tools in the Python,
-		      Golang, and IoT ecosystems, and incorporated them into the development process to improve efficiency and performance.
-		\item Utilized best practices in software engineering, including code reviews, testing, and continuous
-		      integration and deployment, to deliver high-quality and robust code.
-		\item Mentored junior students and provided guidance on technical issues,
-		      design patterns, and software architecture.
 	\end{itemize}
 }
 
@@ -101,10 +51,6 @@
 		\item Develop a \textbf{GraphQL} API for the IoT Platform, enabling users to filter crop data with different filters.
 		\item Use \textbf{serverless-like} architecture to run scrappers periodically on \textbf{Docker swarm} infrastructure.
 		\item Provide a data-processing pipeline using \textbf{Apache Spark} to ingest the stock information.
-		\item Design and implement the IoT platform which provides a comprehensive solution for farmers to meticulously track their crops'
-		      development and understand their specific needs.
-		\item Use \textbf{Sentinel-II satellite imagery} to offer insights into the vitality and health of crops,
-		      allowing for timely interventions.
 	\end{itemize}
 }
 
@@ -112,8 +58,6 @@
 	\begin{itemize}
 		\item Led the development of a \httpslink[\textbf{metering internet system}]{github.com/aut-cic/internet} using \httpslink[FreeRADIUS]{freeradius.org/} and Python,
 		      enabling API calls to the FreeRADIUS system to display usage's volumes.
-		      Utilized best practices in Python development, including modular design and asynchronous programming,
-		      to deliver a scalable and efficient system.
 	\end{itemize}
 }
 
@@ -125,6 +69,5 @@
 		\item Proceed with the installation and configuration of two HPE ProLiant DL380 Gen9 servers,
 		      ensuring \textbf{VMware ESXi} is properly set up on both.
 		\item Deploy services using \textbf{Docker Swarm} over staging and production environment.
-		\item Setup \textbf{CI/CD} pipeline using \textbf{TravisCI} to lint and build services.
 	\end{itemize}
 }

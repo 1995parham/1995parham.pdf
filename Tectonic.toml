@@ -11,12 +11,3 @@ shell_escape = true  # optional, defaults to false: whether "shell escape" (\wri
 preamble = ""        # optional, defaults to "_preamble.tex": the preamble file to use (within `src`)
 index = "main.tex"   # optional, defaults to "index.tex": the index file to use (within `src`)
 postamble = ""       # optional, defaults to "_postamble.tex": the postamble file to use (within `src`)
-
-[[output]]
-name = "parham-letter"    # the output's name
-type = "pdf"              # the output's type
-tex_format = "latex"      # optional, defaults to "latex": the TeX format to use
-shell_escape = true       # optional, defaults to false: whether "shell escape" (\write18) is allowed
-preamble = ""             # optional, defaults to "_preamble.tex": the preamble file to use (within `src`)
-index = "letter/main.tex" # optional, defaults to "index.tex": the index file to use (within `src`)
-postamble = ""            # optional, defaults to "_postamble.tex": the postamble file to use (within `src`)
