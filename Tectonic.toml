@@ -2,12 +2,32 @@
 name = "1995parham.pdf"
 bundle = "https://data1.fullyjustified.net/tlextras-2022.0r0.tar"
 
-# one or more output specifications
+# Default output (Turkey)
 [[output]]
-name = "parham"      # the output's name
-type = "pdf"         # the output's type
-tex_format = "latex" # optional, defaults to "latex": the TeX format to use
-shell_escape = true  # optional, defaults to false: whether "shell escape" (\write18) is allowed
-preamble = ""        # optional, defaults to "_preamble.tex": the preamble file to use (within `src`)
-index = "main.tex"   # optional, defaults to "index.tex": the index file to use (within `src`)
-postamble = ""       # optional, defaults to "_postamble.tex": the postamble file to use (within `src`)
+name = "parham"
+type = "pdf"
+tex_format = "latex"
+shell_escape = true
+preamble = ""
+index = "main.tex"
+postamble = ""
+
+# Turkey variant
+[[output]]
+name = "parham-turkey"
+type = "pdf"
+tex_format = "latex"
+shell_escape = true
+preamble = ""
+index = "turkey.tex"
+postamble = ""
+
+# Iran variant
+[[output]]
+name = "parham-iran"
+type = "pdf"
+tex_format = "latex"
+shell_escape = true
+preamble = ""
+index = "iran.tex"
+postamble = ""
