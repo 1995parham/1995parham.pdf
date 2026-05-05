@@ -1,4 +1,4 @@
-#import "@preview/brilliant-cv:4.0.1": cv-section, cv-skill, cv-skill-tag, cv-skill-with-level, h-bar
+#import "@preview/brilliant-cv:4.0.1": cv-section, cv-skill, cv-skill-tag, cv-skill-with-level
 
 #cv-section("Skills")
 
@@ -16,48 +16,99 @@
 
 #cv-skill(
   type: [Cloud & Orchestration],
-  info: [AWS #h-bar() GCP #h-bar() Kubernetes #h-bar() Docker #h-bar() Helm],
+  info: [
+    #cv-skill-tag([AWS])
+    #cv-skill-tag([GCP])
+    #cv-skill-tag([Kubernetes])
+    #cv-skill-tag([Docker])
+    #cv-skill-tag([Helm])
+  ],
 )
 
 #cv-skill(
   type: [Databases & Data Stores],
-  info: [PostgreSQL #h-bar() MongoDB #h-bar() Cassandra #h-bar() Apache Spark #h-bar() Redis #h-bar() etcd],
+  info: [
+    #cv-skill-tag([PostgreSQL])
+    #cv-skill-tag([MongoDB])
+    #cv-skill-tag([Cassandra])
+    #cv-skill-tag([Apache Spark])
+    #cv-skill-tag([Redis])
+    #cv-skill-tag([etcd])
+  ],
 )
 
 #cv-skill(
   type: [Frameworks],
-  info: [GoFiber #h-bar() Echo #h-bar() GORM #h-bar() Viper #h-bar() Django #h-bar() FastAPI],
+  info: [
+    #cv-skill-tag([GoFiber])
+    #cv-skill-tag([Echo])
+    #cv-skill-tag([GORM])
+    #cv-skill-tag([Viper])
+    #cv-skill-tag([Django])
+    #cv-skill-tag([FastAPI])
+  ],
 )
 
 #cv-skill(
   type: [Observability],
-  info: [Prometheus #h-bar() Grafana #h-bar() Jaeger #h-bar() OpenTelemetry #h-bar() ELK Stack #h-bar() Datadog],
+  info: [
+    #cv-skill-tag([Prometheus])
+    #cv-skill-tag([Grafana])
+    #cv-skill-tag([Jaeger])
+    #cv-skill-tag([OpenTelemetry])
+    #cv-skill-tag([ELK Stack])
+    #cv-skill-tag([Datadog])
+  ],
 )
 
 #cv-skill(
   type: [Infrastructure as Code],
-  info: [Terraform #h-bar() Pulumi #h-bar() Ansible],
+  info: [
+    #cv-skill-tag([Terraform])
+    #cv-skill-tag([Pulumi])
+    #cv-skill-tag([Ansible])
+  ],
 )
 
 #cv-skill(
   type: [GitOps & CI/CD],
-  info: [ArgoCD #h-bar() FluxCD #h-bar() Jenkins #h-bar() GitLab CI #h-bar() GitHub Actions],
+  info: [
+    #cv-skill-tag([ArgoCD])
+    #cv-skill-tag([FluxCD])
+    #cv-skill-tag([Jenkins])
+    #cv-skill-tag([GitLab CI])
+    #cv-skill-tag([GitHub Actions])
+  ],
 )
 
 #cv-skill(
   type: [Service Mesh],
-  info: [Istio #h-bar() Linkerd],
+  info: [
+    #cv-skill-tag([Istio])
+    #cv-skill-tag([Linkerd])
+  ],
 )
 
 #cv-skill(
   type: [Workflow Orchestration],
-  info: [Airflow #h-bar() Temporal.io #h-bar() n8n],
+  info: [
+    #cv-skill-tag([Airflow])
+    #cv-skill-tag([Temporal.io])
+    #cv-skill-tag([n8n])
+  ],
 )
 
 #cv-skill(
   type: [Embedded & IoT],
-  info: [NRF Modules #h-bar() Raspberry Pi #h-bar() SPI / I2C #h-bar() Network Programming],
+  info: [
+    #cv-skill-tag([NRF Modules])
+    #cv-skill-tag([Raspberry Pi])
+    #cv-skill-tag([SPI / I2C])
+    #cv-skill-tag([Network Programming])
+  ],
 )
+
+#cv-section("Languages")
 
 #cv-skill-with-level(
   type: [English],
