@@ -1,0 +1,59 @@
+#:schema https://raw.githubusercontent.com/yunanwg/brilliant-CV/main/metadata.toml.schema.json
+
+# Turkey profile — content lives under shared/, only the contact block differs
+# between profiles. Switch via: typst compile cv.typ --input profile=turkey
+
+header_quote = "Senior Software & Platform Engineer · 10+ years building cloud-native systems"
+
+cv_footer = "Curriculum vitae"
+letter_footer = "Cover letter"
+
+[layout]
+    awesome_color = "#D97706"
+    before_section_skip = "6pt"
+    before_entry_skip = "4pt"
+    before_entry_description_skip = "3pt"
+    paper_size = "a4"
+    date_width = "3.4cm"
+
+    [layout.fonts]
+        regular_fonts = ["Charter", "XCharter", "Libertinus Serif"]
+        header_font = "Charter"
+
+    [layout.header]
+        header_align = "left"
+        display_profile_photo = true
+        profile_photo_radius = "10%"
+        info_font_size = "9.5pt"
+
+    [layout.entry]
+        display_entry_society_first = false
+        display_logo = false
+
+    [layout.section]
+        title_highlight = "first-letters"
+        title_highlight_letters = 3
+
+    [layout.footer]
+        display_page_counter = true
+        display_footer = true
+
+[inject]
+    injected_keywords_list = [
+        "Go", "Golang", "Python", "Kubernetes", "Docker", "NATS",
+        "PostgreSQL", "MongoDB", "Cassandra", "Microservices",
+        "Cloud Native", "Platform Engineering", "ArgoCD", "Terraform",
+        "Helm", "Istio", "Linkerd", "Airflow", "FastAPI", "Django",
+        "Prometheus", "Grafana", "OpenTelemetry", "GitOps", "AWS", "GCP",
+    ]
+
+[personal]
+    first_name = "Parham"
+    last_name = "Alvani"
+
+    [personal.info]
+        email = "parham.alvani@gmail.com"
+        phone = "+90 536 997 78 94"
+        homepage = "1995parham.me"
+        github = "1995parham"
+        location = "Harbiye, Şişli/İstanbul"

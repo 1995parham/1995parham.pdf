@@ -36,21 +36,27 @@ Each release has build date as its name.
 
 ## Build Yourself
 
-Make the resume using [Typst](https://typst.app)!
+Make the resume using [Typst](https://typst.app) and the
+[brilliant-cv](https://typst.app/universe/package/brilliant-cv) template!
 
 ```sh
 # install (macOS)
 brew install typst
+brew install --cask font-fontawesome
 
 # build all three variants
-typst compile src/main.typ   build/parham.pdf
-typst compile src/turkey.typ build/parham-turkey.pdf
-typst compile src/iran.typ   build/parham-iran.pdf
+typst compile src/cv.typ build/parham.pdf         --input profile=turkey
+typst compile src/cv.typ build/parham-turkey.pdf  --input profile=turkey
+typst compile src/cv.typ build/parham-iran.pdf    --input profile=iran
 ```
 
 The body font is Charter — already shipped with macOS. On Linux, install
-`fonts-xcharter` (the OFL-licensed Charter derivative) via your package
-manager; the template's font fallback stack picks it up automatically.
+`fonts-xcharter` (the OFL-licensed Charter derivative) and `fonts-font-awesome`
+via your package manager; the template's font fallback stack picks them up
+automatically.
+
+Profiles live under `src/profile_<region>/metadata.toml`; section content is
+shared across profiles in `src/shared/`.
 
 ## How to write a resume
 
