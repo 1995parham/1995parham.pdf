@@ -1,7 +1,7 @@
 <h1 align="center"> 1995parham.pdf </h1>
 
 <p align="center">
-  <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/1995parham/1995parham.pdf/latex.yaml?logo=github&style=for-the-badge">
+  <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/1995parham/1995parham.pdf/typst.yaml?logo=github&style=for-the-badge">
   <img alt="Me" src="https://img.shields.io/badge/me-parham-orange?style=for-the-badge">
 </p>
 
@@ -36,11 +36,21 @@ Each release has build date as its name.
 
 ## Build Yourself
 
-Make the resume using [Tectonic](https://tectonic-typesetting.github.io/book/latest/index.html)!
+Make the resume using [Typst](https://typst.app)!
 
 ```sh
-tectonic -X build
+# install (macOS)
+brew install typst
+
+# build all three variants
+typst compile src/main.typ   build/parham.pdf
+typst compile src/turkey.typ build/parham-turkey.pdf
+typst compile src/iran.typ   build/parham-iran.pdf
 ```
+
+The body font is Charter — already shipped with macOS. On Linux, install
+`fonts-xcharter` (the OFL-licensed Charter derivative) via your package
+manager; the template's font fallback stack picks it up automatically.
 
 ## How to write a resume
 
