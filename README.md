@@ -55,7 +55,8 @@ just watch iran
 Recipes available: `just build`, `just main`, `just turkey`, `just iran`,
 `just watch [profile]`, `just clean`.
 
-The body font is Charter — already shipped with macOS. Profiles live under
+The body font is Charter (shipped with macOS); on Linux, install XCharter
+(its OFL twin) — that's what CI does. Profiles live under
 `src/profile_<region>/metadata.toml`; section content is shared across
 profiles in `src/shared/`.
 

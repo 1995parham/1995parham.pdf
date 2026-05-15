@@ -1,4 +1,6 @@
-#import "@preview/brilliant-cv:4.0.1": cv-entry, cv-entry-start, cv-entry-continued, cv-section
+#import "@preview/brilliant-cv:4.0.1": (
+  cv-entry, cv-entry-continued, cv-entry-start, cv-section,
+)
 
 #cv-section("Professional Experience")
 
@@ -16,11 +18,14 @@
   tags: ("Python", "Django", "React", "Docker", "RAG"),
 )
 
-#cv-entry(
-  title: [Senior Cloud Engineer],
+#cv-entry-start(
   society: [Snapp!],
-  date: [Oct 2020 -- Dec 2025],
   location: [Tehran, Iran],
+)
+
+#cv-entry-continued(
+  title: [Senior Cloud Engineer],
+  date: [Oct 2020 -- Dec 2025],
   description: list(
     [Led the design and implementation of a company-wide cloud platform, progressing to lead engineer for platform architecture.],
     [Engineered Kubernetes operators (CRDs) to automate ArgoCD authentication and authorization.],
@@ -36,11 +41,9 @@
   tags: ("Kubernetes", "ArgoCD", "NATS", "KServe", "FastAPI", "Airflow", "Kafka", "Strimzi"),
 )
 
-#cv-entry(
+#cv-entry-continued(
   title: [Software Engineer (Shared Services Team)],
-  society: [Snapp!],
   date: [Jan 2019 -- Oct 2020],
-  location: [Tehran, Iran],
   description: list(
     [Optimized critical legacy applications (written in PHP) by migrating them to a modern platform and cloud infrastructure, increasing availability by 20% and facilitating faster rollout of new functionalities.],
     [Developed a *real-time stream processing* service to dynamically adjust pricing and balance demand and supply, resulting in a 5% increase in the number of accepted rides.],

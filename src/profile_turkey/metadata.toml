@@ -27,7 +27,9 @@ letter_footer = "Cover letter"
         info_font_size = "9.5pt"
 
     [layout.entry]
-        display_entry_society_first = false
+        # true: society bold on top, role below (also required for the
+        # cv-entry-start / cv-entry-continued grouping used in professional.typ)
+        display_entry_society_first = true
         display_logo = false
 
     [layout.section]
@@ -57,3 +59,7 @@ letter_footer = "Cover letter"
         homepage = "1995parham.me"
         github = "1995parham"
         location = "Harbiye, Şişli/İstanbul"
+
+        [personal.info.custom-degree]
+            awesomeIcon = "graduation-cap"
+            text = "Ph.D. in Computer Network"
