@@ -1,17 +1,19 @@
 ---
 name: typst
 on:
+  # No `paths:` filter: tag pushes never trigger when `paths` is set, because
+  # tagging a commit already on main doesn't carry a diff for the filter to
+  # match. Build cost is trivial, so we trigger on every push to main and on
+  # every tag push, then gate the release step on the tag ref.
   push:
-    paths:
-      - .github/workflows/typst.yaml
-      - 'src/**/*.typ'
-      - 'src/**/*.toml'
-      - 'src/**/*.jpg'
+    branches: [main]
+    tags: ['*']
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - uses: typst-community/setup-typst@v5
       # Ubuntu's apt has fonts-font-awesome v4 (we need v7) and no
       # fonts-xcharter at all, so download both directly. Both are OFL-licensed.
@@ -27,16 +29,19 @@ jobs:
           fc-list | grep -iE "font.awesome|charter" | head
       - name: prepare build dir
         run: mkdir -p build
-      - name: compile resume (default = turkey)
-        run: typst compile src/cv.typ build/parham.pdf --input profile=turkey
       - name: compile resume (turkey)
         run: typst compile src/cv.typ build/parham-turkey.pdf --input profile=turkey
       - name: compile resume (iran)
         run: typst compile src/cv.typ build/parham-iran.pdf --input profile=iran
+      - name: copy default
+        run: cp build/parham-turkey.pdf build/parham.pdf
       - name: release
         uses: softprops/action-gh-release@v2
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: build/parham.pdf
+          files: |
+            build/parham.pdf
+            build/parham-turkey.pdf
+            build/parham-iran.pdf
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
