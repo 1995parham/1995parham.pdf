@@ -1,31 +1,24 @@
-_default := "turkey"
-
 # show available recipes
 default:
     @just --list
 
-# build all three variants (parham.pdf is the default = turkey)
-build: main turkey iran
-
-# default PDF — same as turkey but at build/parham.pdf
-main:
-    @mkdir -p build
-    typst compile src/cv.typ build/parham.pdf --input profile=turkey
+# build both variants
+build: turkey iran
 
 # turkey variant → build/parham-turkey.pdf
 turkey:
     @mkdir -p build
-    typst compile src/cv.typ build/parham-turkey.pdf --input profile=turkey
+    typst compile src/cv.typ build/parham-turkey.pdf --input profile=turkey --font-path fonts
 
 # iran variant → build/parham-iran.pdf
 iran:
     @mkdir -p build
-    typst compile src/cv.typ build/parham-iran.pdf --input profile=iran
+    typst compile src/cv.typ build/parham-iran.pdf --input profile=iran --font-path fonts
 
-# rebuild the default PDF on save
-watch profile=_default:
+# rebuild a variant on save (profile is required, e.g. `just watch turkey`)
+watch profile:
     @mkdir -p build
-    typst watch src/cv.typ build/parham.pdf --input profile={{profile}}
+    typst watch src/cv.typ build/parham-{{profile}}.pdf --input profile={{profile}} --font-path fonts
 
 # remove build artifacts
 clean:

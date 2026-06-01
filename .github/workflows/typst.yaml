@@ -15,15 +15,16 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - uses: typst-community/setup-typst@v5
-      # Ubuntu's apt has fonts-font-awesome v4 (we need v7) and no
-      # fonts-xcharter at all, so download both directly. Both are OFL-licensed.
+      # The body font (XCharter) is vendored in-repo under fonts/ and passed to
+      # typst via --font-path, so it needs no install here. Ubuntu's apt only has
+      # fonts-font-awesome v4 (we need v7), so download FontAwesome directly.
       # Bump the cache key suffix to force a refresh after changing font versions.
       - name: cache fonts
         id: cache-fonts
         uses: actions/cache@v4
         with:
           path: ~/.local/share/fonts
-          key: fonts-fa7.0.1-xcharter-v1
+          key: fonts-fa7.0.1-v2
       - name: download fonts
         if: steps.cache-fonts.outputs.cache-hit != 'true'
         run: |
@@ -31,26 +32,21 @@ jobs:
           cd ~/.local/share/fonts
           curl -fsSL https://use.fontawesome.com/releases/v7.0.1/fontawesome-free-7.0.1-desktop.zip -o /tmp/fa.zip
           unzip -qoj /tmp/fa.zip 'fontawesome-free-*/otfs/*.otf' -d .
-          curl -fsSL https://mirrors.ctan.org/fonts/xcharter.zip -o /tmp/xc.zip
-          unzip -qoj /tmp/xc.zip 'xcharter/opentype/*.otf' -d .
       - name: refresh font cache
         run: |
           fc-cache -f
-          fc-list | grep -iE "font.awesome|charter" | head
+          fc-list | grep -iE "font.awesome" | head
       - name: prepare build dir
         run: mkdir -p build
       - name: compile resume (turkey)
-        run: typst compile src/cv.typ build/parham-turkey.pdf --input profile=turkey
+        run: typst compile src/cv.typ build/parham-turkey.pdf --input profile=turkey --font-path fonts
       - name: compile resume (iran)
-        run: typst compile src/cv.typ build/parham-iran.pdf --input profile=iran
-      - name: copy default
-        run: cp build/parham-turkey.pdf build/parham.pdf
+        run: typst compile src/cv.typ build/parham-iran.pdf --input profile=iran --font-path fonts
       - name: release
         uses: softprops/action-gh-release@v2
         if: startsWith(github.ref, 'refs/tags/')
         with:
           files: |
-            build/parham.pdf
             build/parham-turkey.pdf
             build/parham-iran.pdf
         env:
