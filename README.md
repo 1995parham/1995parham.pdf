@@ -44,21 +44,22 @@ Made with [Typst](https://typst.app) and the
 brew install typst just
 brew install --cask font-fontawesome
 
-# build all three variants via just
+# build both variants via just
 just build
 
 # or watch a single variant for live rebuilds
-just watch          # turkey (default)
+just watch turkey
 just watch iran
 ```
 
-Recipes available: `just build`, `just main`, `just turkey`, `just iran`,
-`just watch [profile]`, `just clean`.
+Recipes available: `just build`, `just turkey`, `just iran`,
+`just watch <profile>`, `just clean`.
 
-The body font is Charter (shipped with macOS); on Linux, install XCharter
-(its OFL twin) — that's what CI does. Profiles live under
-`src/profile_<region>/metadata.toml`; section content is shared across
-profiles in `src/shared/`.
+The body font is XCharter (OFL), vendored in-repo under `fonts/` and passed to
+Typst via `--font-path fonts`, so no font install is needed for the body text.
+A profile must be selected explicitly (`--input profile=turkey|iran`); there is
+no default. Profiles live under `src/profile_<region>/metadata.toml`; section
+content is shared across profiles in `src/shared/`.
 
 ## How to write a resume
 
