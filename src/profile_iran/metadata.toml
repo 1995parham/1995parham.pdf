@@ -17,8 +17,10 @@ letter_footer = "Cover letter"
     date_width = "3.4cm"
 
     [layout.fonts]
-        regular_fonts = ["Charter", "XCharter", "Libertinus Serif"]
-        header_font = "Charter"
+        # XCharter is vendored under fonts/ (passed via --font-path), so it
+        # resolves identically on macOS and in CI. Charter is the macOS twin.
+        regular_fonts = ["XCharter", "Charter", "Libertinus Serif"]
+        header_font = "XCharter"
 
     [layout.header]
         header_align = "left"
