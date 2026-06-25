@@ -43,7 +43,7 @@ jobs:
       - name: compile resume (iran)
         run: typst compile src/cv.typ build/parham-iran.pdf --input profile=iran --font-path fonts
       - name: release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         if: startsWith(github.ref, 'refs/tags/')
         with:
           files: |
