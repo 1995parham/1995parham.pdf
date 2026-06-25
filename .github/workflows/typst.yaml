@@ -7,13 +7,13 @@ on:
   # every tag push, then gate the release step on the tag ref.
   push:
     branches: [main]
-    tags: ['*']
+    tags: ["*"]
   workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - uses: typst-community/setup-typst@v5
       # The body font (XCharter) is vendored in-repo under fonts/ and passed to
       # typst via --font-path, so it needs no install here. Ubuntu's apt only has
