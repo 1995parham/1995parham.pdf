@@ -1,42 +1,48 @@
-#import "@preview/brilliant-cv:4.0.1": cv-entry, cv-section
+#import "@preview/brilliant-cv:4.0.1": (
+  cv-entry, cv-entry-continued, cv-entry-start, cv-section,
+)
 
 #cv-section("Teaching Experience")
 
-#cv-entry(
-  title: [Internet Engineering — Lecturer],
+// Grouped per institution (same cv-entry-start / cv-entry-continued pattern as
+// professional.typ) so each university name is printed once instead of per
+// course. Lecturing here was concurrent with full-time industry work.
+#cv-entry-start(
   society: [Amirkabir University of Technology],
-  date: [Fall 2020 -- Spring 2024],
   location: [Tehran, Iran],
+)
+
+#cv-entry-continued(
+  title: [Internet Engineering — Lecturer],
+  date: [Fall 2020 -- Spring 2024],
   description: list(
     [Taught seven semesters of Internet Engineering covering web protocols, networking, and full-stack development.],
   ),
 )
 
-#cv-entry(
+#cv-entry-continued(
   title: [Principles of Computer and Programming — Lecturer],
-  society: [Amirkabir University of Technology],
   date: [Spring 2020 -- Spring 2022],
-  location: [Tehran, Iran],
   description: list(
     [Taught three semesters of Principles of Computer and Programming.],
   ),
 )
 
-#cv-entry(
-  title: [Web Engineering — Lecturer],
+#cv-entry-start(
   society: [Shahid Beheshti University],
-  date: [Fall 2020 -- Spring 2021],
   location: [Tehran, Iran],
-  description: list(
-    [Taught Web Engineering for two semesters.],
-  ),
 )
 
-#cv-entry(
-  title: [Introduction to Programming — Lecturer],
-  society: [Shahid Beheshti University],
-  date: [Spring 2020],
-  location: [Tehran, Iran],
+// Both Shahid Beheshti courses share one entry. Beyond reading tighter, this
+// avoids an upstream bug: cv-entry-continued evaluates date.fields().children
+// unconditionally, which panics on a single-token date such as [Spring 2020]
+// (a lone text run has no `children` field). Ranges containing `--` are fine.
+#cv-entry-continued(
+  title: [Web Engineering, Introduction to Programming — Lecturer],
+  date: [Spring 2020 -- Spring 2021],
+  description: list(
+    [Taught Web Engineering for two semesters and Introduction to Programming for one.],
+  ),
 )
 
 #cv-entry(

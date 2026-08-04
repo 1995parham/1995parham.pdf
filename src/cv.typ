@@ -23,8 +23,8 @@
 #include "shared/skills.typ"
 #include "shared/projects.typ"
 #include "shared/education.typ"
+#include "shared/teaching.typ"
 
 // Optional sections — uncomment to include.
 // #include "shared/honors.typ"
 // #include "shared/certificates.typ"
-// #include "shared/teaching.typ"
