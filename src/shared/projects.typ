@@ -12,6 +12,7 @@
     [Integrated heterogeneous data sources --- Canadian official sales records, soil information, and satellite imagery --- to predict per-farm market prices.],
     [Orchestrated data ingestion and cleaning pipelines with *Airflow*, providing scheduled runs, retries, and lineage visibility.],
     [Built an internal *Django Admin* console alongside the user panel so product managers could review user queries, feedback, and underlying data health.],
+    [Deployed on *AWS*, combining *EC2* instances with *Lambda* functions.],
   ),
-  tags: ("Python", "Django", "Airflow"),
+  tags: ("Python", "Django", "Airflow", "AWS", "Lambda"),
 )
