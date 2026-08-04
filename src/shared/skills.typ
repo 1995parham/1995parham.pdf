@@ -2,50 +2,65 @@
 
 #cv-section("Skills")
 
+// Curated for a human reader, not for keyword matching: the [inject] block in
+// each profile's metadata.toml already feeds an invisible keyword list to ATS
+// parsers, so this list does not need to be exhaustive. Entries here should be
+// defensible in an interview and, ideally, evidenced by a bullet above.
+//
+// Category labels are kept to ~14 characters; the label column is narrow and
+// longer ones wrap onto a second line ("Infrastructure as / Code").
+
 #cv-skill(
   type: [Languages],
   info: [
     #cv-skill-tag([Go])
     #cv-skill-tag([Python])
-    #cv-skill-tag([Java])
     #cv-skill-tag([Rust])
-    #cv-skill-tag([Scala])
     #cv-skill-tag([C])
   ],
 )
 
 #cv-skill(
-  type: [Cloud & Orchestration],
+  type: [Cloud Native],
   info: [
-    #cv-skill-tag([AWS])
-    #cv-skill-tag([GCP])
     #cv-skill-tag([Kubernetes])
     #cv-skill-tag([Docker])
     #cv-skill-tag([Helm])
+    #cv-skill-tag([Istio])
+    #cv-skill-tag([Knative])
+    #cv-skill-tag([KServe])
+    #cv-skill-tag([AWS])
+    #cv-skill-tag([GCP])
   ],
 )
 
 #cv-skill(
-  type: [Databases & Data Stores],
+  type: [Messaging],
+  info: [
+    #cv-skill-tag([NATS])
+    #cv-skill-tag([Kafka])
+    #cv-skill-tag([Strimzi])
+  ],
+)
+
+#cv-skill(
+  type: [Data],
   info: [
     #cv-skill-tag([PostgreSQL])
     #cv-skill-tag([MongoDB])
-    #cv-skill-tag([Cassandra])
-    #cv-skill-tag([Apache Spark])
     #cv-skill-tag([Redis])
-    #cv-skill-tag([etcd])
+    #cv-skill-tag([Apache Spark])
+    #cv-skill-tag([Airflow])
   ],
 )
 
 #cv-skill(
   type: [Frameworks],
   info: [
-    #cv-skill-tag([GoFiber])
-    #cv-skill-tag([Echo])
-    #cv-skill-tag([GORM])
-    #cv-skill-tag([Viper])
     #cv-skill-tag([Django])
     #cv-skill-tag([FastAPI])
+    #cv-skill-tag([GoFiber])
+    #cv-skill-tag([Echo])
   ],
 )
 
@@ -54,47 +69,18 @@
   info: [
     #cv-skill-tag([Prometheus])
     #cv-skill-tag([Grafana])
-    #cv-skill-tag([Jaeger])
     #cv-skill-tag([OpenTelemetry])
-    #cv-skill-tag([ELK Stack])
-    #cv-skill-tag([Datadog])
+    #cv-skill-tag([Jaeger])
   ],
 )
 
 #cv-skill(
-  type: [Infrastructure as Code],
-  info: [
-    #cv-skill-tag([Terraform])
-    #cv-skill-tag([Pulumi])
-    #cv-skill-tag([Ansible])
-  ],
-)
-
-#cv-skill(
-  type: [GitOps & CI/CD],
+  type: [GitOps & IaC],
   info: [
     #cv-skill-tag([ArgoCD])
-    #cv-skill-tag([FluxCD])
-    #cv-skill-tag([Jenkins])
-    #cv-skill-tag([GitLab CI])
+    #cv-skill-tag([Terraform])
+    #cv-skill-tag([Ansible])
     #cv-skill-tag([GitHub Actions])
-  ],
-)
-
-#cv-skill(
-  type: [Service Mesh],
-  info: [
-    #cv-skill-tag([Istio])
-    #cv-skill-tag([Linkerd])
-  ],
-)
-
-#cv-skill(
-  type: [Workflow Orchestration],
-  info: [
-    #cv-skill-tag([Airflow])
-    #cv-skill-tag([Temporal.io])
-    #cv-skill-tag([n8n])
   ],
 )
 
