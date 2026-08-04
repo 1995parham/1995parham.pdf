@@ -15,12 +15,13 @@
   location: [Remote --- Canada],
   description: list(
     [Spearheaded the development of a new doctors panel using *Python* and React, successfully migrating users from the old system without disruption.],
+    [Developed the application frontend in *Vue*.],
     [Managed the end-to-end development lifecycle, from technical design to containerized deployment with Docker.],
     [Ran the platform on *AWS*, operating managed *EKS* clusters and *ECS* for containerized workloads.],
     [Architected and implemented the Django database models, overcoming the project's most significant technical challenge to ensure data integrity and system functionality.],
     [Built an AI-powered transcription pipeline using *Deepgram*, *RAG*, and *Pydantic AI* to transcribe doctor-patient sessions and generate structured SOAP (Subjective, Objective, Assessment, Plan) notes.],
   ),
-  tags: ("Python", "Django", "React", "Docker", "AWS", "EKS", "RAG"),
+  tags: ("Python", "Django", "Vue", "React", "Docker", "AWS", "EKS", "RAG"),
 )
 
 #cv-entry-start(

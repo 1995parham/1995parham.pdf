@@ -54,7 +54,7 @@ letter_footer = "Cover letter"
         "Helm", "Istio", "Linkerd", "Airflow", "FastAPI", "Django",
         "Prometheus", "Grafana", "OpenTelemetry", "GitOps", "AWS", "GCP",
         "Kafka", "Strimzi", "Knative", "KServe", "Rust", "Redis",
-        "EKS", "ECS",
+        "EKS", "ECS", "Vue", "Vue.js", "React",
     ]
 
 [personal]
