@@ -2,6 +2,21 @@
 
 #cv-section("Projects")
 
+// society renders bold above title (display_entry_society_first), so the
+// project name goes in society and the "personal project" framing below it.
+#cv-entry(
+  title: [Personal Project],
+  society: [Compliance & Privacy Agent],
+  date: [2026],
+  location: [GCP],
+  description: list(
+    [Built a *RAG* agent that answers compliance and privacy questions, served on *Google Cloud Run*.],
+    [Ingested regulations, articles, and guidance through *Cloud Run* jobs, embedding them into a *vector database* for semantic search across the corpus.],
+    [Served the underlying model through *Vertex AI*, keeping ingestion, retrieval, and inference on a single platform.],
+  ),
+  tags: ("GCP", "Cloud Run", "Vertex AI", "RAG", "Vector Search"),
+)
+
 #cv-entry(
   title: [Farm Appraisal Platform],
   society: [Offerland],

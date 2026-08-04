@@ -51,6 +51,8 @@ letter_footer = "Cover letter"
         "Prometheus", "Grafana", "OpenTelemetry", "GitOps", "AWS", "GCP",
         "Kafka", "Strimzi", "Knative", "KServe", "Rust", "Redis",
         "EKS", "ECS", "Lambda", "Vue", "Vue.js",
+        "Cloud Run", "Vertex AI", "RAG", "Vector Database",
+        "Semantic Search", "LLM",
     ]
 
 [personal]
