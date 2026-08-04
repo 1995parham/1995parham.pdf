@@ -5,10 +5,12 @@
 // society renders bold above title (display_entry_society_first), so the
 // project name goes in society and the "personal project" framing below it.
 #cv-entry(
-  title: [Personal Project],
+  title: [Freelance],
   society: [Compliance & Privacy Agent],
   date: [2026],
-  location: [GCP],
+  // Geography, consistent with every other entry's location column — not the
+  // platform the work came through and not the cloud it ran on.
+  location: [Remote],
   description: list(
     [Built a *RAG* agent that guides teams through achieving compliance certifications such as *SOC 2*, answering privacy and controls questions against current regulatory text. Served on *Google Cloud Run*.],
     [Ingested regulations, standards, and articles from the web on a *daily* schedule through *Cloud Run* jobs, so answers track requirements as they change rather than a stale snapshot.],
