@@ -48,16 +48,16 @@ brew install --cask font-fontawesome
 just build
 
 # or watch a single variant for live rebuilds
-just watch turkey
+just watch spain
 just watch iran
 ```
 
-Recipes available: `just build`, `just turkey`, `just iran`,
+Recipes available: `just build`, `just spain`, `just iran`,
 `just watch <profile>`, `just clean`.
 
 The body font is XCharter (OFL), vendored in-repo under `fonts/` and passed to
 Typst via `--font-path fonts`, so no font install is needed for the body text.
-A profile must be selected explicitly (`--input profile=turkey|iran`); there is
+A profile must be selected explicitly (`--input profile=spain|iran`); there is
 no default. Profiles live under `src/profile_<region>/metadata.toml`; section
 content is shared across profiles in `src/shared/`.
 

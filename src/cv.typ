@@ -1,6 +1,6 @@
 // Resume entry point. A profile MUST be selected explicitly at compile time:
-//   typst compile src/cv.typ build/parham-turkey.pdf --input profile=turkey
-//   typst compile src/cv.typ build/parham-iran.pdf   --input profile=iran
+//   typst compile src/cv.typ build/parham-spain.pdf --input profile=spain
+//   typst compile src/cv.typ build/parham-iran.pdf  --input profile=iran
 // Profiles only differ in the contact block (phone + location); section
 // content lives under shared/.
 
@@ -9,7 +9,7 @@
 #let profile = if "profile" in sys.inputs {
   sys.inputs.profile
 } else {
-  panic("no profile selected — pass --input profile=turkey or profile=iran")
+  panic("no profile selected — pass --input profile=spain or profile=iran")
 }
 #let metadata = toml("profile_" + profile + "/metadata.toml")
 

@@ -1,7 +1,11 @@
 #:schema https://raw.githubusercontent.com/yunanwg/brilliant-CV/main/metadata.toml.schema.json
 
-# Turkey profile — content lives under shared/, only the contact block differs
-# between profiles. Switch via: typst compile cv.typ --input profile=turkey
+# Spain profile — content lives under shared/, only the contact block differs
+# between profiles. Switch via: typst compile cv.typ --input profile=spain
+#
+# No phone number until the Spanish SIM is active; email and homepage carry the
+# contact load in the meantime. The custom-visa entry states work authorization
+# up front so recruiters do not screen this out as needing sponsorship.
 
 header_quote = "Senior Software & Platform Engineer · 10+ years building cloud-native systems"
 
@@ -57,11 +61,14 @@ letter_footer = "Cover letter"
 
     [personal.info]
         email = "parham.alvani@gmail.com"
-        phone = "+90 536 997 78 94"
         homepage = "1995parham.me"
         github = "1995parham"
-        location = "Harbiye, Şişli/İstanbul"
+        location = "Barcelona, Spain"
 
         [personal.info.custom-degree]
             awesomeIcon = "graduation-cap"
             text = "Ph.D. in Computer Network"
+
+        [personal.info.custom-visa]
+            awesomeIcon = "passport"
+            text = "Spain Digital Nomad Visa — no sponsorship required"

@@ -38,8 +38,8 @@ jobs:
           fc-list | grep -iE "font.awesome" | head
       - name: prepare build dir
         run: mkdir -p build
-      - name: compile resume (turkey)
-        run: typst compile src/cv.typ build/parham-turkey.pdf --input profile=turkey --font-path fonts
+      - name: compile resume (spain)
+        run: typst compile src/cv.typ build/parham-spain.pdf --input profile=spain --font-path fonts
       - name: compile resume (iran)
         run: typst compile src/cv.typ build/parham-iran.pdf --input profile=iran --font-path fonts
       - name: release
@@ -47,7 +47,7 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
         with:
           files: |
-            build/parham-turkey.pdf
+            build/parham-spain.pdf
             build/parham-iran.pdf
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
