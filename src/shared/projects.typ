@@ -10,9 +10,9 @@
   date: [2026],
   location: [GCP],
   description: list(
-    [Built a *RAG* agent that answers compliance and privacy questions, served on *Google Cloud Run*.],
-    [Ingested regulations, articles, and guidance through *Cloud Run* jobs, embedding them into a *vector database* for semantic search across the corpus.],
-    [Served the underlying model through *Vertex AI*, keeping ingestion, retrieval, and inference on a single platform.],
+    [Built a *RAG* agent that guides teams through achieving compliance certifications such as *SOC 2*, answering privacy and controls questions against current regulatory text. Served on *Google Cloud Run*.],
+    [Ingested regulations, standards, and articles from the web on a *daily* schedule through *Cloud Run* jobs, so answers track requirements as they change rather than a stale snapshot.],
+    [Embedded the corpus into a *vector database* for semantic search and served the model through *Vertex AI*, keeping ingestion, retrieval, and inference on a single platform.],
   ),
   tags: ("GCP", "Cloud Run", "Vertex AI", "RAG", "Vector Search"),
 )
