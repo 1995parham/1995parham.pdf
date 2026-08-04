@@ -2,8 +2,10 @@
 
 #cv-section("Projects")
 
-// society renders bold above title (display_entry_society_first), so the
-// project name goes in society and the "personal project" framing below it.
+// Convention for this section: `society` is the project's own name and
+// `title` is where the work came from, because display_entry_society_first
+// renders society bold above the title. That puts what was built in the
+// heading and the client or engagement type in the subtitle.
 #cv-entry(
   title: [Freelance],
   society: [Compliance & Privacy Agent],
@@ -20,8 +22,8 @@
 )
 
 #cv-entry(
-  title: [Farm Appraisal Platform],
-  society: [Offerland],
+  title: [Offerland],
+  society: [Farm Appraisal Platform],
   date: [2024 -- 2025],
   location: [BC, Canada],
   description: list(
