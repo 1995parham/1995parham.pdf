@@ -22,6 +22,19 @@
 )
 
 #cv-entry(
+  title: [Freelance --- Swift AI],
+  society: [Device Security Agent],
+  date: [2025],
+  location: [Remote],
+  description: list(
+    [Built the on-device agent in *Go* for a US security startup's platform, monitoring managed devices across customer fleets and applying control actions to them.],
+    [Implemented the device-to-backend channel over a message broker, streaming telemetry upstream and executing commands pushed back down to each device.],
+    [Packaged and deployed the supporting services with *Docker* and *Kubernetes*.],
+  ),
+  tags: ("Go", "Docker", "Kubernetes", "Messaging", "Edge"),
+)
+
+#cv-entry(
   title: [Offerland],
   society: [Farm Appraisal Platform],
   date: [2024 -- 2025],

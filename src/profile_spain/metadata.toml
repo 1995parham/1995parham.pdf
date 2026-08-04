@@ -56,7 +56,7 @@ letter_footer = "Cover letter"
         "Kafka", "Strimzi", "Knative", "KServe", "Rust", "Redis",
         "EKS", "ECS", "Lambda", "Vue", "Vue.js",
         "Cloud Run", "Vertex AI", "RAG", "Vector Database",
-        "Semantic Search", "LLM", "SOC 2", "Compliance",
+        "Semantic Search", "LLM", "SOC 2", "Compliance", "Edge", "Device Management",
     ]
 
 [personal]
