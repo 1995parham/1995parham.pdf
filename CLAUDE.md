@@ -1,0 +1,57 @@
+# CLAUDE.md — 1995parham.pdf
+
+Parham Alvani's resume, written in Typst using the `@preview/brilliant-cv:4.0.1`
+package.
+
+## Build
+
+```sh
+just build          # both variants into build/
+just spain          # build/parham-spain.pdf
+just iran           # build/parham-iran.pdf
+just watch spain    # live rebuild
+```
+
+A profile **must** be passed explicitly (`--input profile=spain|iran`); there is
+no default and `src/cv.typ` panics without one. XCharter is vendored under
+`fonts/` and passed via `--font-path fonts`; FontAwesome must be installed
+system-wide (`brew install --cask font-fontawesome`).
+
+## Layout
+
+- `src/cv.typ` — entry point; selects a profile and includes the shared sections.
+- `src/profile_<region>/metadata.toml` — **the only** per-region difference: the
+  contact block. Everything else is shared, so the variants cannot drift.
+- `src/shared/*.typ` — all section content. Editing these changes every variant.
+
+The `spain` profile deliberately carries **no `phone` key** (no Spanish number
+yet) and adds a `[personal.info.custom-visa]` line stating work authorization,
+because non-EU candidates get screened out unless that is visible up front.
+
+## Gotchas
+
+- `cv-entry-continued` evaluates `date.fields().children` unconditionally, so a
+  single-token date such as `[Spring 2020]` panics — a lone text run has no
+  `children` field. Use a range containing `--`.
+- The location column is only `date_width` (3.4cm) wide; longer strings wrap and
+  push the date onto a third line.
+- The release workflow publishes the spain variant a second time as the stable
+  name `parham.pdf`, which `1995parham.github.io` links to directly. Do not
+  remove that asset without updating the site.
+
+## Cross-repo alignment (important)
+
+This repo is the **source of truth** for Parham's professional facts. Three
+repos state the same information publicly and must agree:
+
+| Repo | What it states |
+|---|---|
+| `1995parham.pdf` (here) | Full resume — authoritative |
+| `1995parham.github.io` | `pages/index.tsx`, `pages/experience.tsx`, `pages/education.tsx` |
+| `1995parham` | GitHub profile README "About Me" |
+
+When you change any of the following here, **update the other two repos in the
+same session**: job titles, employer names, start/end dates, part-time or remote
+labels, the headline/summary, location, or education. A recruiter reading the
+resume and the site side by side will notice a contradiction, and a stale
+"Present" on a past employer is the most damaging kind.
