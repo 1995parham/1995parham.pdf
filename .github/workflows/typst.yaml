@@ -42,11 +42,17 @@ jobs:
         run: typst compile src/cv.typ build/parham-spain.pdf --input profile=spain --font-path fonts
       - name: compile resume (iran)
         run: typst compile src/cv.typ build/parham-iran.pdf --input profile=iran --font-path fonts
+      # 1995parham.github.io links to the release asset literally named
+      # parham.pdf, so publish the default (spain) variant under that stable
+      # name too. Dropping it silently 404s the "Here is my CV" button.
+      - name: publish default variant as parham.pdf
+        run: cp build/parham-spain.pdf build/parham.pdf
       - name: release
         uses: softprops/action-gh-release@v3
         if: startsWith(github.ref, 'refs/tags/')
         with:
           files: |
+            build/parham.pdf
             build/parham-spain.pdf
             build/parham-iran.pdf
         env:
