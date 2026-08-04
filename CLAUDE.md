@@ -39,6 +39,18 @@ because non-EU candidates get screened out unless that is visible up front.
   name `parham.pdf`, which `1995parham.github.io` links to directly. Do not
   remove that asset without updating the site.
 
+## The resume-qa agent
+
+`.claude/agents/resume-qa.md` defines a read-only subagent that answers questions
+about Parham's professional history strictly from `src/`. Use it for interview
+prep, screening questions, checking whether a claim is backed by an actual
+bullet, or drafting application answers.
+
+It is deliberately constrained: it never invents facts, it separates evidenced
+claims (in a bullet) from unevidenced ones (in `skills.typ` only) from invisible
+ATS keywords (in `[inject]`), and it knows that `honors.typ` and
+`certificates.typ` are commented out of `cv.typ` and therefore not published.
+
 ## Cross-repo alignment (important)
 
 This repo is the **source of truth** for Parham's professional facts. Three
