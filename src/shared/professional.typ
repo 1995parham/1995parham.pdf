@@ -4,11 +4,15 @@
 
 #cv-section("Professional Experience")
 
+// Held concurrently with Snapp! through Dec 2025, hence the part-time note —
+// an unexplained overlap reads as an error to a recruiter.
 #cv-entry(
-  title: [Senior Software Engineer],
+  title: [Senior Software Engineer (part-time until Dec 2025)],
   society: [AveeHealth],
-  date: [Jan 2025 -- Jan 2026],
-  location: [Vancouver, B.C.],
+  date: [Jan 2025 -- Present],
+  // Kept short: the location column is date_width (3.4cm), and
+  // "Vancouver, B.C. (Remote)" wraps and pushes the date onto a third line.
+  location: [Remote --- Canada],
   description: list(
     [Spearheaded the development of a new doctors panel using *Python* and React, successfully migrating users from the old system without disruption.],
     [Managed the end-to-end development lifecycle, from technical design to containerized deployment with Docker.],
@@ -67,8 +71,10 @@
   tags: ("IoT", "Mainflux", "Microservices", "Embedded"),
 )
 
+// Nahalco and Avidnet were both part-time roles held while completing the
+// B.Sc. (2013--2017), which is why their ranges overlap each other.
 #cv-entry(
-  title: [Software Engineer],
+  title: [Software Engineer (part-time)],
   society: [Nahalco],
   date: [Jul 2013 -- Mar 2017],
   location: [Tehran, Iran],
@@ -80,7 +86,7 @@
 )
 
 #cv-entry(
-  title: [Software Engineer],
+  title: [Software Engineer (part-time)],
   society: [Avidnet],
   date: [Jun 2014 -- May 2016],
   location: [Tehran, Iran],
