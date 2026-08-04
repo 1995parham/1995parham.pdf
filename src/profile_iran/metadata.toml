@@ -49,6 +49,7 @@ letter_footer = "Cover letter"
         "Cloud Native", "Platform Engineering", "ArgoCD", "Terraform",
         "Helm", "Istio", "Linkerd", "Airflow", "FastAPI", "Django",
         "Prometheus", "Grafana", "OpenTelemetry", "GitOps", "AWS", "GCP",
+        "Kafka", "Strimzi", "Knative", "KServe", "Rust", "Redis",
     ]
 
 [personal]
