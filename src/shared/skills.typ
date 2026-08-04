@@ -59,6 +59,7 @@
   info: [
     #cv-skill-tag([Django])
     #cv-skill-tag([FastAPI])
+    #cv-skill-tag([Vue])
     #cv-skill-tag([GoFiber])
     #cv-skill-tag([Echo])
   ],
