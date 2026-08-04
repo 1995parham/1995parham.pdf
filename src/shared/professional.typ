@@ -8,7 +8,7 @@
 // an unexplained overlap reads as an error to a recruiter.
 #cv-entry(
   title: [Senior Software Engineer (part-time until Dec 2025)],
-  society: [AveeHealth],
+  society: [AveeHealth --- Canadian digital-health startup],
   date: [Jan 2025 -- Present],
   // Kept short: the location column is date_width (3.4cm), and
   // "Vancouver, B.C. (Remote)" wraps and pushes the date onto a third line.
@@ -23,8 +23,11 @@
   tags: ("Python", "Django", "Vue", "Docker", "AWS", "EKS", "RAG"),
 )
 
+// Descriptors exist because Snapp!, Nahalco and Avidnet mean nothing to a
+// European reviewer. The scale figure is the point: it lets "300k messages/sec"
+// below be read as consumer-platform scale rather than an isolated number.
 #cv-entry-start(
-  society: [Snapp!],
+  society: [Snapp! --- Iran's largest ride-hailing platform, 50M+ users],
   location: [Tehran, Iran],
 )
 
