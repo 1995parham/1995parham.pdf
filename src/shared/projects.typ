@@ -7,7 +7,7 @@
 // renders society bold above the title. That puts what was built in the
 // heading and the client or engagement type in the subtitle.
 #cv-entry(
-  title: [Freelance],
+  title: [Freelance --- Upwork],
   society: [Compliance & Privacy Agent],
   date: [2026],
   // Geography, consistent with every other entry's location column — not the
