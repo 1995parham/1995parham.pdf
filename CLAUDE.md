@@ -46,6 +46,19 @@ The `spain` profile deliberately carries **no `phone` key** (no Spanish number
 yet) and adds a `[personal.info.custom-visa]` line stating work authorization,
 because non-EU candidates get screened out unless that is visible up front.
 
+`cv.typ` wraps the entry-based sections in `keep-header-with-body`, a show rule
+that marks brilliant-cv's header tables `sticky` so an entry cannot strand its
+header alone at the foot of a page. It is applied per-section on purpose —
+`skills.typ` is also table-built, and making those sticky would chain every skill
+row to the next and drag the section onto one page. Wrap new entry-based sections
+with it; leave tag-based ones bare.
+
+In `projects.typ`, `society` is the **project name** and `title` is **where the
+work came from** (`Freelance --- Upwork`, `Offerland`). That is inverted relative
+to `professional.typ` and deliberate: `display_entry_society_first` renders
+`society` bold above `title`, so this puts what was built in the heading and the
+client in the subtitle. Keep new project entries consistent.
+
 ## Gotchas
 
 - `cv-entry-continued` evaluates `date.fields().children` unconditionally, so a
@@ -53,6 +66,9 @@ because non-EU candidates get screened out unless that is visible up front.
   `children` field. Use a range containing `--`.
 - The location column is only `date_width` (3.4cm) wide; longer strings wrap and
   push the date onto a third line.
+- `letter()`'s `subject` is a plain string, not markup, so Typst's `---` → em-dash
+  substitution does **not** apply and `---` renders literally. Type a real em dash
+  there. Inside the letter body, `---` works as usual.
 - The release workflow publishes the spain variant a second time as the stable
   name `parham.pdf`, which `1995parham.github.io` links to directly. Do not
   remove that asset without updating the site.
@@ -77,7 +93,7 @@ repos state the same information publicly and must agree:
 | Repo | What it states |
 |---|---|
 | `1995parham.pdf` (here) | Full resume — authoritative |
-| `1995parham.github.io` | `pages/index.tsx`, `pages/experience.tsx`, `pages/education.tsx` |
+| `1995parham.github.io` | `src/pages/index.astro`, `experience.astro`, `education.astro`, `projects.astro` |
 | `1995parham` | GitHub profile README "About Me" |
 
 When you change any of the following here, **update the other two repos in the
