@@ -15,6 +15,18 @@ iran:
     @mkdir -p build
     typst compile src/cv.typ build/parham-iran.pdf --input profile=iran --font-path fonts
 
+# cover letter → build/parham-<name>-cover-letter.pdf (e.g. `just letter synadia`)
+# --root src: letters live one level deeper than cv.typ and read the profile
+# metadata from ../profile_<region>/, which escapes the default sandbox
+# (the directory of the entry file).
+letter name:
+    @mkdir -p build
+    typst compile src/letters/{{name}}.typ build/parham-{{name}}-cover-letter.pdf --root src --font-path fonts
+
+# list the cover letters available to `just letter`
+letters:
+    @ls src/letters/*.typ | xargs -n1 basename | sed 's/\.typ$//'
+
 # rebuild a variant on save (profile is required, e.g. `just watch spain`)
 watch profile:
     @mkdir -p build
