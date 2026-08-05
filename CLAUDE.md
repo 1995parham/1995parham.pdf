@@ -17,6 +17,24 @@ no default and `src/cv.typ` panics without one. XCharter is vendored under
 `fonts/` and passed via `--font-path fonts`; FontAwesome must be installed
 system-wide (`brew install --cask font-fontawesome`).
 
+## Cover letters
+
+One file per application under `src/letters/`, built with `just letter <name>`
+(`just letters` lists them). Each uses the package's `letter()` function and
+reads a profile's `metadata.toml`, so name, accent colour, fonts, footer and ATS
+keyword injection match the resume automatically.
+
+Two things to know before adding one:
+
+- The recipe passes `--root src`. Letters sit one level deeper than `cv.typ` and
+  read `../profile_<region>/metadata.toml`, which escapes Typst's default
+  sandbox (the entry file's own directory).
+- Pass `sender-address` explicitly. The spain profile has no `address` key, so
+  the package would otherwise print its `"Your Address Here"` placeholder.
+
+Letters are deliberately **not** built in CI or attached to releases — they are
+per-application and shouldn't be published with the resume.
+
 ## Layout
 
 - `src/cv.typ` — entry point; selects a profile and includes the shared sections.
