@@ -12,10 +12,10 @@
 
 #show: letter.with(
   metadata,
-  // The spain profile has no `address` key (no Spanish address yet), so the
-  // sender address is passed explicitly rather than falling back to the
-  // package's "Your Address Here" placeholder.
-  sender-address: "Barcelona, Spain",
+  // brilliant-cv has no `address` key in `personal.info` — it looks up an icon
+  // per key and fails on one it does not know — so the postal address lives on
+  // `location` in the profile and is repeated here, where a letter wants it.
+  sender-address: "Avinguda Diagonal 571, 08029 Barcelona, Spain",
   recipient-name: "Synadia",
   recipient-address: "EMEA — Remote",
   date: datetime.today().display("[day] [month repr:long] [year]"),

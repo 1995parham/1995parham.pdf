@@ -29,8 +29,10 @@ Two things to know before adding one:
 - The recipe passes `--root src`. Letters sit one level deeper than `cv.typ` and
   read `../profile_<region>/metadata.toml`, which escapes Typst's default
   sandbox (the entry file's own directory).
-- Pass `sender-address` explicitly. The spain profile has no `address` key, so
-  the package would otherwise print its `"Your Address Here"` placeholder.
+- Pass `sender-address` explicitly. `personal.info` has no `address` key —
+  brilliant-cv looks up an icon per key and dies on one it does not know, so the
+  postal address rides on `location` instead — and without `sender-address` the
+  package prints its `"Your Address Here"` placeholder.
 
 Letters are deliberately **not** built in CI or attached to releases — they are
 per-application and shouldn't be published with the resume.

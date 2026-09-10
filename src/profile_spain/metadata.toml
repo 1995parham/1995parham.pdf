@@ -4,7 +4,10 @@
 # between profiles. Switch via: typst compile cv.typ --input profile=spain
 #
 # No phone number until the Spanish SIM is active; email and homepage carry the
-# contact load in the meantime. The custom-visa entry states work authorization
+# contact load in the meantime. The full postal address rides on `location`:
+# brilliant-cv builds the header by looking up an icon per `personal.info` key,
+# so an `address` key fails with `dictionary does not contain key "address"`.
+# `location` is the supported field and already renders with the map-pin icon. The custom-visa entry states work authorization
 # up front so recruiters do not screen this out as needing sponsorship.
 #
 # The visa line claims the permit, not the card: the residence authorisation
@@ -75,7 +78,7 @@ letter_footer = "Cover letter"
         email = "parham.alvani@gmail.com"
         homepage = "1995parham.me"
         github = "1995parham"
-        location = "Barcelona, Spain"
+        location = "Avinguda Diagonal 571, 08029 Barcelona, Spain"
 
         [personal.info.custom-degree]
             awesomeIcon = "graduation-cap"

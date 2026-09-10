@@ -14,7 +14,7 @@
 
 #show: letter.with(
   metadata,
-  sender-address: "Barcelona, Spain",
+  sender-address: "Avinguda Diagonal 571, 08029 Barcelona, Spain",
   recipient-name: "Elastic",
   recipient-address: "EMEA — Remote",
   date: datetime.today().display("[day] [month repr:long] [year]"),
