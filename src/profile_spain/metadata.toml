@@ -6,6 +6,14 @@
 # No phone number until the Spanish SIM is active; email and homepage carry the
 # contact load in the meantime. The custom-visa entry states work authorization
 # up front so recruiters do not screen this out as needing sponsorship.
+#
+# The visa line claims the permit, not the card: the residence authorisation
+# under Ley 14/2013 runs to January 2029, and the resolution states it takes
+# effect from the day it was issued rather than from the TIE being printed. It
+# deliberately does not say "digital nomad" — that permit is for work performed
+# for companies outside Spain, capped at 20% Spanish activity, and naming it
+# invites the question in a screening call rather than in an interview. This
+# repository is public; permit numbers stay out of it.
 
 header_quote = "Senior Software & Platform Engineer · 10+ years building cloud-native systems"
 
@@ -75,4 +83,4 @@ letter_footer = "Cover letter"
 
         [personal.info.custom-visa]
             awesomeIcon = "passport"
-            text = "Spain Digital Nomad Visa — no sponsorship required"
+            text = "Spain residence permit to 2029 — no sponsorship required"
