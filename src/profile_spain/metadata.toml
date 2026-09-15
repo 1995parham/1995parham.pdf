@@ -3,8 +3,9 @@
 # Spain profile — content lives under shared/, only the contact block differs
 # between profiles. Switch via: typst compile cv.typ --input profile=spain
 #
-# No phone number until the Spanish SIM is active; email and homepage carry the
-# contact load in the meantime. The full postal address rides on `location`:
+# The phone is the French Orange Holiday prepaid line, kept alive as a stable EU
+# number until a Spanish SIM replaces it — a non-EU number on an EU application
+# reads as "not actually here". The full postal address rides on `location`:
 # brilliant-cv builds the header by looking up an icon per `personal.info` key,
 # so an `address` key fails with `dictionary does not contain key "address"`.
 # `location` is the supported field and already renders with the map-pin icon. The custom-visa entry states work authorization
@@ -76,6 +77,7 @@ letter_footer = "Cover letter"
 
     [personal.info]
         email = "parham.alvani@gmail.com"
+        phone = "+33 6 74 98 82 96"
         homepage = "1995parham.me"
         github = "1995parham"
         location = "Avinguda Diagonal 571, 08029 Barcelona, Spain"
