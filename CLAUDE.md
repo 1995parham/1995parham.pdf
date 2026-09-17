@@ -50,6 +50,8 @@ Progress lives in the Obsidian vault at `~/org`, where everything is written dow
 - `~/org/Companies/<Company>/` — company description and role description.
 - `~/org/Spain/` — the residence permit, the immigration lawyer, and what the authorisation actually allows. This decides which employers are viable at all: the permit covers work for companies outside Spain, so a "Spain, remote" role hired through a Spanish entity or an EOR is a different case from a foreign employer.
 
+The line is progress versus reference. Public reference material about *how* to search is fine here — `job-boards.md` lists the boards worth using and the ATS-search technique that beats them, and says nothing about which roles were applied for. What stays out is anything naming a target, a status or an outcome.
+
 When you add a letter under `src/letters/` here, add the matching task in `~/org/Tasks/Interview.md` in the same session, or the two drift and applications get sent twice. Read `~/org/Tasks/CLAUDE.md` before writing there — the vault has its own conventions and they win inside it.
 
 ## Layout
