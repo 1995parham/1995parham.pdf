@@ -4,6 +4,32 @@
 
 #cv-section("Professional Experience")
 
+// Held part-time alongside the AveeHealth work, hence the note — three
+// concurrent 2025 roles read as an error otherwise. This is the only entry
+// evidencing an observability stack, which several target roles ask for; the
+// claim used to live only in skills.typ, where nothing backed it.
+//
+// Deliberately says what Parham does, not how Nobitex is built. Cluster and
+// datacenter counts, the wallet and blockchain services, and the shape of the
+// auth tier were all cut: this repository is public, the resume goes to
+// strangers, and an exchange is a target. Keep new bullets on the same side of
+// that line — tooling and outcomes yes, internal topology no.
+#cv-entry(
+  title: [Senior Site Reliability Engineer (part-time)],
+  society: [Nobitex --- Iran's largest cryptocurrency exchange, 10M+ users],
+  date: [May 2025 -- Present],
+  location: [Remote --- Iran],
+  description: list(
+    [Operate the company-wide observability platform: *Prometheus*-format metrics aggregated centrally into *Grafana*, with per-team dashboards behind *Keycloak* single sign-on.],
+    [Maintain *VictoriaMetrics* alerting rules routed by severity and owner to on-call paging, and wrote the runbook behind every paging alert.],
+    [Run *GitOps* with *ArgoCD* across a multi-cluster, multi-datacenter *Kubernetes* estate, reconciling *Helm* charts from a single repository with canary rollouts.],
+    [Migrated core services onto *Kubernetes* and onto the *GitOps* path, with *HashiCorp Vault* for secrets management.],
+    [Built the centralized logging pipeline: *Kafka* buffering into *Vector*, fanning out to *Loki*, *OpenSearch* and syslog.],
+    [Delivered organization-wide single sign-on and a self-hosted CI runner fleet.],
+  ),
+  tags: ("Kubernetes", "ArgoCD", "Prometheus", "Grafana", "VictoriaMetrics", "Loki", "Vault"),
+)
+
 // Held concurrently with Snapp! through Dec 2025, hence the part-time note —
 // an unexplained overlap reads as an error to a recruiter.
 #cv-entry(
