@@ -37,6 +37,21 @@ Two things to know before adding one:
 Letters are deliberately **not** built in CI or attached to releases — they are
 per-application and shouldn't be published with the resume.
 
+## Where the job search is tracked
+
+This repository holds the **documents** — the resume and the cover letters. The *progress* of the search stays out: targets, application statuses, rejections, interview stages and who has been contacted, including out of commit messages and branch names.
+
+Be aware of what the repository already reveals, though. The committed letters under `src/letters/` name the employers applied to — `synadia.typ` and `elastic.typ` are readable by anyone — and each is dated at build time. That is a deliberate trade for keeping letters beside the resume they must match, but it means the repository is not neutral about the search, and a letter to a current employer's competitor would be visible. Move letters to a private location if that ever matters more than the convenience.
+
+Progress lives in the Obsidian vault at `~/org`, where everything is written down as it happens, committed and kept:
+
+- `~/org/Tasks/Interview.md` — the cross-cutting record: permit questions, follow-ups owed, applications still to send, cover letters to write, what went out and when, what closed and why.
+- `~/org/Tasks/Code Chorus.md` — interview stages, round by round, one section per company.
+- `~/org/Companies/<Company>/` — company description and role description.
+- `~/org/Spain/` — the residence permit, the immigration lawyer, and what the authorisation actually allows. This decides which employers are viable at all: the permit covers work for companies outside Spain, so a "Spain, remote" role hired through a Spanish entity or an EOR is a different case from a foreign employer.
+
+When you add a letter under `src/letters/` here, add the matching task in `~/org/Tasks/Interview.md` in the same session, or the two drift and applications get sent twice. Read `~/org/Tasks/CLAUDE.md` before writing there — the vault has its own conventions and they win inside it.
+
 ## Layout
 
 - `src/cv.typ` — entry point; selects a profile and includes the shared sections.
