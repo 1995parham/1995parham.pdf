@@ -18,6 +18,20 @@ This is not a stylistic preference. On 2026-09-17 the aggregators produced three
 
 A second habit worth keeping: when a company looks promising, read its **whole** board rather than the one role you arrived for. Titles vary more than the work does, and the better-fitting req is often two rows down.
 
+## Query the ATS API, not the page
+
+Better still than loading a board: most applicant-tracking systems expose a public JSON API with no key. It returns every open role with its exact location string, which makes filtering for Spain trivial and sidesteps iframes, lazy loading and cookie walls entirely.
+
+```
+https://boards-api.greenhouse.io/v1/boards/<company>/jobs          # all roles
+https://boards-api.greenhouse.io/v1/boards/<company>/jobs/<id>     # one role, full text
+https://api.ashbyhq.com/posting-api/job-board/<company>
+```
+
+On 2026-09-29 an aggregator advertised exactly one Thunes role in Barcelona. The Greenhouse API showed **ten**, five of them engineering, including a second Golang opening and a Python one. The page itself never rendered them to any tool, because `thunes.com/jobs/` is a Greenhouse iframe embed.
+
+When a careers page is an embed, the slug is in the iframe's `for=` parameter: read `new URL(document.querySelector('iframe[src*="greenhouse"]').src).searchParams.get('for')`, then hit the API with it. The application form for a single role lives at `job-boards.greenhouse.io/embed/job_app?for=<slug>&token=<id>`.
+
 When a careers page renders its openings but no tool can see the links, the board is an iframe embed and the real board is one level up. Read `document.querySelectorAll('iframe')` and go to the source directly — `ats.rippling.com/<company>/jobs`, `jobs.ashbyhq.com/<company>`, `job-boards.greenhouse.io/<company>`, `<company>.teamtailor.com/jobs`. Malwarebytes on 2026-09-29 was exactly this: the listings were visible on screen and invisible to the accessibility tree.
 
 Note also that a dead board does not mean a dead company. Docker's Greenhouse board returns "no longer active" while their Ashby board is busy, and Malwarebytes has no Greenhouse board at all. An aggregator link failing is a reason to find the current ATS, not to drop the company.
