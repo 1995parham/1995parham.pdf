@@ -11,13 +11,14 @@ site:jobs.ashbyhq.com "Spain" ("Solutions Architect" OR "Technical Account Manag
 site:job-boards.greenhouse.io "Spain" Kubernetes Remote
 site:boards.greenhouse.io Spain observability
 site:ats.rippling.com Spain Go Kubernetes
+site:teamtailor.com Spain platform engineer
 ```
 
 This is not a stylistic preference. On 2026-09-17 the aggregators produced three roles that did not exist as described — one had been filled, one required German, one was never EMEA — while a direct sweep of one company's Ashby board turned up eleven Spain-eligible openings that no aggregator listed. Check the company's own board before writing a letter for a role.
 
 A second habit worth keeping: when a company looks promising, read its **whole** board rather than the one role you arrived for. Titles vary more than the work does, and the better-fitting req is often two rows down.
 
-When a careers page renders its openings but no tool can see the links, the board is an iframe embed and the real board is one level up. Read `document.querySelectorAll('iframe')` and go to the source directly — `ats.rippling.com/<company>/jobs`, `jobs.ashbyhq.com/<company>`, `job-boards.greenhouse.io/<company>`. Malwarebytes on 2026-09-29 was exactly this: the listings were visible on screen and invisible to the accessibility tree.
+When a careers page renders its openings but no tool can see the links, the board is an iframe embed and the real board is one level up. Read `document.querySelectorAll('iframe')` and go to the source directly — `ats.rippling.com/<company>/jobs`, `jobs.ashbyhq.com/<company>`, `job-boards.greenhouse.io/<company>`, `<company>.teamtailor.com/jobs`. Malwarebytes on 2026-09-29 was exactly this: the listings were visible on screen and invisible to the accessibility tree.
 
 Note also that a dead board does not mean a dead company. Docker's Greenhouse board returns "no longer active" while their Ashby board is busy, and Malwarebytes has no Greenhouse board at all. An aggregator link failing is a reason to find the current ATS, not to drop the company.
 
