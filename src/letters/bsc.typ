@@ -13,10 +13,13 @@
 // the letter names the area and topics explicitly, and it ends with two
 // named references.
 //
-// >>> PARHAM MUST REPLACE THE TWO REFERENCE PLACEHOLDERS BEFORE SENDING. <<<
-// They are rendered in the PDF in square brackets so they cannot be missed.
-// Referees are other people's personal data and their consent; nobody should
-// invent them on his behalf.
+// References supplied by Parham on 2026-09-30: Mehdi Rasti and Bahador
+// Bakhshi, both of whom taught him at Amirkabir. Titles, current affiliations
+// and email addresses were verified against the institutions' own pages
+// rather than assumed — note that Rasti LEFT Amirkabir in 2022 and is now a
+// Full Professor at the University of Oulu, so listing him under Amirkabir
+// would have been wrong and his aut.ac.ir address may no longer reach him.
+// Confirm both are willing to be contacted before this goes out.
 //
 // Why this is the best fit in the search: BSC want the platform half and the
 // ML half of the same engineer. Snapp! has both — KServe and Knative ML
@@ -113,10 +116,15 @@ sponsorship or relocation support is required.
 *References*
 
 #v(0.2em)
-[REFERENCE 1 --- full name, role, organisation, relationship to me, email, phone]
+*Prof. Mehdi Rasti* --- Full Professor, Centre for Wireless Communications, Faculty of
+Information Technology and Electrical Engineering, University of Oulu, Finland. \
+`mehdi.rasti@oulu.fi` --- previously of the Department of Computer Engineering at
+Amirkabir University of Technology, where he taught and supervised me.
 
 #v(0.2em)
-[REFERENCE 2 --- full name, role, organisation, relationship to me, email, phone]
+*Dr. Bahador Bakhshi* --- Assistant Professor, Department of Computer Engineering
+(Computer Networks and Architecture), Amirkabir University of Technology, Tehran. \
+`bbakhshi@aut.ac.ir` --- taught and supervised me during my studies there.
 
 #v(0.4em)
 
