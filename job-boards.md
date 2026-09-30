@@ -30,6 +30,10 @@ https://api.ashbyhq.com/posting-api/job-board/<company>
 
 On 2026-09-29 an aggregator advertised exactly one Thunes role in Barcelona. The Greenhouse API showed **ten**, five of them engineering, including a second Golang opening and a Python one. The page itself never rendered them to any tool, because `thunes.com/jobs/` is a Greenhouse iframe embed.
 
+A slug is often *not* the company name, and guessing costs a company. On 2026-09-30 `boards-api.greenhouse.io/v1/boards/fever` returned 404 and Fever looked like it was not on Greenhouse at all; the iframe on `careers.feverup.com` gave `for=feverup`, and that board holds their whole engineering pipeline. Read the slug, never infer it.
+
+Beware too of a careers page whose filters ignore query parameters. Fever's `?country=Spain&department=Engineering` returns all 567 jobs; the dropdowns have to be driven in the page. Filtering properly turned 567 into 26 Spain engineering roles, one of which no aggregator listed.
+
 When a careers page is an embed, the slug is in the iframe's `for=` parameter: read `new URL(document.querySelector('iframe[src*="greenhouse"]').src).searchParams.get('for')`, then hit the API with it. The application form for a single role lives at `job-boards.greenhouse.io/embed/job_app?for=<slug>&token=<id>`.
 
 When a careers page renders its openings but no tool can see the links, the board is an iframe embed and the real board is one level up. Read `document.querySelectorAll('iframe')` and go to the source directly — `ats.rippling.com/<company>/jobs`, `jobs.ashbyhq.com/<company>`, `job-boards.greenhouse.io/<company>`, `<company>.teamtailor.com/jobs`. Malwarebytes on 2026-09-29 was exactly this: the listings were visible on screen and invisible to the accessibility tree.
