@@ -48,7 +48,7 @@ Progress lives in the Obsidian vault at `~/org`, where everything is written dow
 - `~/org/Tasks/Interview.md` — the cross-cutting record: permit questions, follow-ups owed, applications still to send, cover letters to write, what went out and when, what closed and why.
 - `~/org/Tasks/Code Chorus.md` — interview stages, round by round, one section per company.
 - `~/org/Companies/<Company>/` — company description and role description.
-- `~/org/Spain/` — the residence permit, the immigration lawyer, and what the authorisation actually allows. This decides which employers are viable at all: the permit covers work for companies outside Spain, so a "Spain, remote" role hired through a Spanish entity or an EOR is a different case from a foreign employer.
+- `~/org/Spain/` — the residence permit, the immigration lawyer, and what the authorisation actually allows. Note that a **Spanish employer is not a constraint**: Parham confirmed on 2026-10-02 that he can work with Spanish entities, so do not flag a Spanish contract or an EOR as a risk in a company note or hold an application back over it.
 
 The line is progress versus reference. Public reference material about *how* to search is fine here — `job-boards.md` lists the boards worth using and the ATS-search technique that beats them, and says nothing about which roles were applied for. What stays out is anything naming a target, a status or an outcome.
 
