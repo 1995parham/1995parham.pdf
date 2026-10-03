@@ -115,6 +115,14 @@ repos state the same information publicly and must agree:
 | `1995parham.github.io` | `src/pages/index.astro`, `experience.astro`, `education.astro`, `projects.astro` |
 | `1995parham` | GitHub profile README "About Me" |
 
+Two more public surfaces are not repos but carry the same facts and drift the
+same way: **LinkedIn** (`linkedin.com/in/1995parham`) and **Wellfound**
+(`wellfound.com/u/1995parham`). Wellfound was a year stale when it was last
+checked — wrong Snapp title, no education at all, no current employer, and a
+resume PDF from 2025 still being served to recruiters. Re-check it whenever
+this file changes; `~/org/Career/Wellfound Profile.md` records what it should
+say.
+
 When you change any of the following here, **update the other two repos in the
 same session**: job titles, employer names, start/end dates, part-time or remote
 labels, the headline/summary, location, or education. A recruiter reading the
