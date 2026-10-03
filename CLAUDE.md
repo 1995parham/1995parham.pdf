@@ -115,13 +115,17 @@ repos state the same information publicly and must agree:
 | `1995parham.github.io` | `src/pages/index.astro`, `experience.astro`, `education.astro`, `projects.astro` |
 | `1995parham` | GitHub profile README "About Me" |
 
-Two more public surfaces are not repos but carry the same facts and drift the
-same way: **LinkedIn** (`linkedin.com/in/1995parham`) and **Wellfound**
-(`wellfound.com/u/1995parham`). Wellfound was a year stale when it was last
-checked — wrong Snapp title, no education at all, no current employer, and a
-resume PDF from 2025 still being served to recruiters. Re-check it whenever
-this file changes; `~/org/Career/Wellfound Profile.md` records what it should
-say.
+Three more public surfaces are not repos but carry the same facts and drift the
+same way: **LinkedIn** (`linkedin.com/in/1995parham`), **Wellfound**
+(`wellfound.com/u/1995parham`) and **Work at a Startup**
+(`workatastartup.com/application`, Y Combinator's board). Both of the latter
+two were badly stale when last checked, and in the same places: wrong Snapp
+title, no education, no current employer, a removed employer still marked
+current. Work at a Startup was worse — it also placed him in **Istanbul** and
+carried a UK phone number, and it has **no resume upload at all**, so the
+structured profile *is* what founders read. Re-check all three whenever this
+file changes; `~/org/Career/Wellfound Profile.md` and
+`~/org/Career/Work at a Startup Profile.md` record what each should say.
 
 When you change any of the following here, **update the other two repos in the
 same session**: job titles, employer names, start/end dates, part-time or remote
