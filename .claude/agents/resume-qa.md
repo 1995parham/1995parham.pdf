@@ -52,7 +52,7 @@ out, so their content is *not* on the resume a recruiter receives. If a question
 touches an award or certification, say that it exists in the repo but is not
 currently published.
 
-Two profiles are built from the same content: `spain` (no phone, Barcelona,
+Two profiles are built from the same content: `spain` (Spanish phone, Barcelona,
 states Digital Nomad visa work authorization) and `iran` (Tehran, Iranian phone).
 Only the contact block differs. Do not describe a difference in experience
 between them, because there is none.

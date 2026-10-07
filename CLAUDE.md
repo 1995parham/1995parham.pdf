@@ -61,8 +61,7 @@ When you add a letter under `src/letters/` here, add the matching task in `~/org
   contact block. Everything else is shared, so the variants cannot drift.
 - `src/shared/*.typ` — all section content. Editing these changes every variant.
 
-The `spain` profile deliberately carries **no `phone` key** (no Spanish number
-yet) and adds a `[personal.info.custom-visa]` line stating work authorization,
+The `spain` profile carries the Spanish Vodafone number and adds a `[personal.info.custom-visa]` line stating work authorization,
 because non-EU candidates get screened out unless that is visible up front.
 
 `cv.typ` wraps the entry-based sections in `keep-header-with-body`, a show rule
