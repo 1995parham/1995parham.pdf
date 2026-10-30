@@ -56,10 +56,11 @@ through a MAC address and layer-2 routing fault on our segment. The traffic
 was never ours. That is the shape of the work you describe: the interesting
 failures are the ones that do not announce themselves.
 
-Lower down the stack, at Avidnet I engineered a *reliable layer-2 transport
-protocol* --- Stop-and-Wait ARQ with retry logic --- directly on top of raw NRF
-radio modules, to guarantee delivery in a noisy environment, and configured
-bare-metal *HPE ProLiant* servers on *VMware ESXi*. I have also achieved
+Lower down the stack, in the IoT Working Group at Amirkabir I engineered a
+*reliable layer-2 transport protocol* --- Stop-and-Wait ARQ with retry logic
+--- directly on top of raw NRF radio modules, to guarantee delivery in a noisy
+environment, and at Avidnet I configured bare-metal *HPE ProLiant* servers on
+*VMware ESXi*. I have also achieved
 in-application video calling over *WebRTC* using the *Pion* framework in Go,
 one of the earliest adoptions of Pion in the region, handling 1,000 concurrent
 calls through a distributed design. Protocol-level work is not new territory
