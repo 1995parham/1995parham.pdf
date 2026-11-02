@@ -55,7 +55,7 @@
   date: [2023],
   location: [Remote],
   description: list(
-    [Worked on a compliance platform that reviews an organisation's *Microsoft Azure* resources against compliance standards, showing teams where a configuration falls short of a control and what to change.],
+    [Worked on a platform that reviews *Microsoft Azure* resources against compliance standards, with an *AI* pipeline that suggests infrastructure and architecture fixes and opens tickets; it ran on *Kubernetes* with *Elasticsearch*.],
   ),
-  tags: ("Azure", "Compliance", "Cloud Governance"),
+  tags: ("Azure", "AI", "Compliance", "Kubernetes"),
 )
