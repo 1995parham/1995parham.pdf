@@ -48,3 +48,14 @@
   ),
   tags: ("Python", "Django", "Airflow", "AWS", "Lambda"),
 )
+
+#cv-entry(
+  title: [Kaytu],
+  society: [Cloud Compliance Platform],
+  date: [2023],
+  location: [Remote],
+  description: list(
+    [Worked on a compliance platform that reviews an organisation's *Microsoft Azure* resources against compliance standards, showing teams where a configuration falls short of a control and what to change.],
+  ),
+  tags: ("Azure", "Compliance", "Cloud Governance"),
+)
